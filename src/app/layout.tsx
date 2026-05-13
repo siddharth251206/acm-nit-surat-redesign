@@ -3,6 +3,8 @@ import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { TransitionProvider } from "@/components/motion/TransitionContext";
+import PageCurtain from "@/components/motion/PageCurtain";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -38,27 +40,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={jetbrainsMono.variable}>
-      <head>
-        {/* Fontshare — Clash Display + Cabinet Grotesk */}
-        <link
-          rel="preconnect"
-          href="https://api.fontshare.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,800&display=swap"
-          rel="stylesheet"
-        />
-        <link
-          href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,600,700,800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className="font-body antialiased">
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+    <html lang="en" className={jetbrainsMono.variable} suppressHydrationWarning>
+      <body className="font-body antialiased" suppressHydrationWarning>
+        <TransitionProvider>
+          <PageCurtain />
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </TransitionProvider>
       </body>
     </html>
   );

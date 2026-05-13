@@ -1,41 +1,29 @@
 "use client";
 
-import { motion } from "framer-motion";
+/**
+ * PageTransition — lightweight CSS-only fade-in wrapper.
+ *
+ * We intentionally avoid framer-motion here because:
+ *  1. Next.js 14 App Router does NOT support AnimatePresence exit
+ *     animations (there's no layout-level outlet to intercept).
+ *  2. motion.div with `initial` props causes a hydration mismatch:
+ *     the server renders with defaults, but the client immediately
+ *     sets opacity:0 / y:20, so React sees a DOM diff and throws
+ *     "removeChild on Node" when it tries to reconcile.
+ *
+ * The page curtain (PageCurtain.tsx) handles the cinematic exit
+ * transition. This component only handles the entrance fade-in
+ * using a plain CSS animation — zero hydration risk.
+ */
 
 interface PageTransitionProps {
   children: React.ReactNode;
 }
 
-const pageVariants = {
-  initial: {
-    opacity: 0,
-    y: 20,
-  },
-  animate: {
-    opacity: 1,
-    y: 0,
-  },
-  exit: {
-    opacity: 0,
-    y: -20,
-  },
-};
-
-const pageTransition = {
-  duration: 0.4,
-  ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
-};
-
 export default function PageTransition({ children }: PageTransitionProps) {
   return (
-    <motion.div
-      initial="initial"
-      animate="animate"
-      exit="exit"
-      variants={pageVariants}
-      transition={pageTransition}
-    >
+    <div className="page-enter">
       {children}
-    </motion.div>
+    </div>
   );
 }

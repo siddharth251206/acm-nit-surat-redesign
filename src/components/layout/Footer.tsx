@@ -1,4 +1,6 @@
-import Link from "next/link";
+"use client";
+
+import TransitionLink from "@/components/motion/TransitionLink";
 import Image from "next/image";
 
 const footerLinks = [
@@ -52,7 +54,7 @@ export default function Footer() {
         {/* Top Row */}
         <div className="flex flex-col tablet:flex-row items-start tablet:items-center justify-between gap-8 mb-12">
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          <TransitionLink href="/" className="flex items-center">
             <Image
               src="/acm-logo.png"
               alt="ACM SVNIT Logo"
@@ -60,18 +62,18 @@ export default function Footer() {
               height={50}
               className="h-9 tablet:h-10 w-auto opacity-90 hover:opacity-100 transition-opacity"
             />
-          </Link>
+          </TransitionLink>
 
           {/* Nav Links */}
           <div className="flex flex-wrap gap-6">
             {footerLinks.map((link) => (
-              <Link
+              <TransitionLink
                 key={link.href}
                 href={link.href}
                 className="text-sm font-body text-text-secondary hover:text-text-primary transition-colors duration-200"
               >
                 {link.label}
-              </Link>
+              </TransitionLink>
             ))}
           </div>
 

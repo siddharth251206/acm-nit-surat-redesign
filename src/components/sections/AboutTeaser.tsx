@@ -1,83 +1,43 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Link from "next/link";
+import TransitionLink from "@/components/motion/TransitionLink";
 import { ArrowRight } from "lucide-react";
 
 export default function AboutTeaser() {
   const sectionRef = useRef<HTMLElement>(null);
-  const leftRef = useRef<HTMLDivElement>(null);
-  const rightRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    let cleanup: (() => void) | undefined;
+    if (!sectionRef.current) return;
 
-    const init = async () => {
-      try {
-        const gsapModule = await import("gsap");
-        const stModule = await import("gsap/ScrollTrigger");
-        const gsap = gsapModule.default;
-        const ScrollTrigger = stModule.ScrollTrigger;
-        gsap.registerPlugin(ScrollTrigger);
+    const children = sectionRef.current.querySelectorAll(".reveal-item");
 
-        let ctx = gsap.context(() => {
-          if (!leftRef.current || !rightRef.current || !sectionRef.current)
-            return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("revealed");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -50px 0px" }
+    );
 
-          gsap.fromTo(
-            leftRef.current,
-            { opacity: 0, x: -60 },
-            {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              ease: "power3.out",
-              scrollTrigger: {
-                trigger: sectionRef.current,
-                start: "top 80%",
-              },
-            }
-          );
-
-          gsap.fromTo(
-            rightRef.current,
-            { opacity: 0, x: 60 },
-            {
-              opacity: 1,
-              x: 0,
-              duration: 0.8,
-              delay: 0.15,
-              ease: "power3.out",
-              scrollTrigger: {
-                trigger: sectionRef.current,
-                start: "top 80%",
-              },
-            }
-          );
-        }, sectionRef);
-
-        cleanup = () => {
-          ctx.revert();
-        };
-      } catch {
-        // Graceful degradation
-        if (leftRef.current) leftRef.current.style.opacity = "1";
-        if (rightRef.current) rightRef.current.style.opacity = "1";
-      }
-    };
-
-    init();
-    return () => {
-      if (cleanup) cleanup();
-    };
+    children.forEach((child) => observer.observe(child));
+    return () => observer.disconnect();
   }, []);
 
   return (
-    <section ref={sectionRef} className="section-padding" style={{ backgroundColor: "var(--bg-primary)" }}>
+    <section
+      ref={sectionRef}
+      className="section-padding"
+      style={{ backgroundColor: "var(--bg-primary)" }}
+    >
       <div className="container-site">
         <div className="grid grid-cols-1 tablet:grid-cols-2 gap-12 tablet:gap-16 items-start">
           {/* Left — Pull Quote */}
-          <div ref={leftRef} style={{ opacity: 0 }}>
+          <div className="reveal-item">
             <span className="mono-label mb-6 block">// ABOUT US</span>
             <p
               className="font-display"
@@ -96,7 +56,7 @@ export default function AboutTeaser() {
           </div>
 
           {/* Right — Description + CTA */}
-          <div ref={rightRef} style={{ opacity: 0 }}>
+          <div className="reveal-item" style={{ transitionDelay: "0.15s" }}>
             <p className="mb-4">
               The ACM SVNIT Student Chapter is the official student chapter of
               the Association for Computing Machinery at NIT Surat. Since 2012,
@@ -107,9 +67,9 @@ export default function AboutTeaser() {
               competitive programming contests — we build, we learn, and we
               push boundaries.
             </p>
-            <Link href="/about" className="btn-outline">
+            <TransitionLink href="/about" className="btn-outline">
               Read More <ArrowRight size={14} />
-            </Link>
+            </TransitionLink>
           </div>
         </div>
       </div>

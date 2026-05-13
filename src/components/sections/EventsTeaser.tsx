@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import TransitionLink from "@/components/motion/TransitionLink";
 import { ArrowRight, Calendar, MapPin } from "lucide-react";
 import eventsData from "@/data/events.json";
 
@@ -27,9 +27,9 @@ export default function EventsTeaser() {
               recent <span style={{ color: "var(--accent)" }}>events</span>
             </h2>
           </div>
-          <Link href="/events" className="btn-outline">
+          <TransitionLink href="/events" className="btn-outline">
             View all events <ArrowRight size={14} />
-          </Link>
+          </TransitionLink>
         </div>
 
         {/* Cards Grid */}

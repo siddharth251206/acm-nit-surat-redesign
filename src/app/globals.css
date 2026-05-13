@@ -3,20 +3,15 @@
 @tailwind utilities;
 
 /* ============================================
+   Fontshare — loaded via CSS @import
+   (NOT in <head> to avoid hydration mismatches)
+   ============================================ */
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,800&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,600,700,800&display=swap');
+
+/* ============================================
    ACM SVNIT — Design System Tokens
    ============================================ */
-
-@font-face {
-  font-family: 'Clash Display';
-  src: url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,800&display=swap') format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,600,700,800&display=swap') format('woff2');
-  font-display: swap;
-}
 
 :root {
   /* Backgrounds */
@@ -64,7 +59,6 @@
 }
 
 html {
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -310,5 +304,78 @@ a {
 @media (min-width: 640px) {
   .show-mobile {
     display: none;
+  }
+}
+
+/* ============================================
+   Page Enter Animation (CSS-only, no hydration risk)
+   ============================================ */
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: pageEnter 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ============================================
+   Scroll Reveal — IntersectionObserver adds .revealed
+   ============================================ */
+
+.reveal-item {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.reveal-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================
+   Domains Horizontal Scroll Track
+   ============================================ */
+
+.domains-scroll-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================================
+   Mobile-first Responsive Refinements
+   ============================================ */
+
+/* Small phones (< 400px) */
+@media (max-width: 399px) {
+  :root {
+    --gutter: 1rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.8rem;
+  }
+
+  .tag {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+/* Phones (< 640px) */
+@media (max-width: 639px) {
+  .section-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }

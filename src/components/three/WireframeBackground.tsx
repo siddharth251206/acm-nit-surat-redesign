@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface WireframeBackgroundProps {
   opacity?: number;
@@ -14,18 +14,25 @@ export default function WireframeBackground({
   className = "",
 }: WireframeBackgroundProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const rendererRef = useRef<unknown>(null);
+  const [mounted, setMounted] = useState(false);
+
+  // Only mount the Three.js canvas after the component has hydrated
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    if (!mounted || !containerRef.current) return;
     const container = containerRef.current;
 
     let animationId: number;
     let disposed = false;
+    let canvasElement: HTMLCanvasElement | null = null;
 
     const init = async () => {
-      const THREE = await import("three");
+      if (disposed) return;
 
+      const THREE = await import("three");
       if (disposed) return;
 
       const scene = new THREE.Scene();
@@ -47,8 +54,14 @@ export default function WireframeBackground({
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.setClearColor(0x000000, 0);
 
-      rendererRef.current = renderer;
-      container.appendChild(renderer.domElement);
+      canvasElement = renderer.domElement;
+
+      // Safety check before appending
+      if (disposed || !container) {
+        renderer.dispose();
+        return;
+      }
+      container.appendChild(canvasElement);
 
       // Detect mobile for lower geometry detail
       const isMobile = window.innerWidth < 640;
@@ -75,9 +88,10 @@ export default function WireframeBackground({
 
       // Handle resize
       const handleResize = () => {
-        if (disposed) return;
+        if (disposed || !container) return;
         const w = container.clientWidth;
         const h = container.clientHeight;
+        if (w === 0 || h === 0) return;
         camera.aspect = w / h;
         camera.updateProjectionMatrix();
         renderer.setSize(w, h);
@@ -96,7 +110,7 @@ export default function WireframeBackground({
       };
       animate();
 
-      // Cleanup closure
+      // Store cleanup
       return () => {
         disposed = true;
         window.removeEventListener("resize", handleResize);
@@ -106,23 +120,34 @@ export default function WireframeBackground({
         icoGeo2.dispose();
         icoMat2.dispose();
         renderer.dispose();
-        if (container.contains(renderer.domElement)) {
-          container.removeChild(renderer.domElement);
-        }
       };
     };
 
-    let cleanup: (() => void) | undefined;
-    init().then((c) => {
-      cleanup = c;
+    let cleanupFn: (() => void) | undefined;
+
+    init().then((fn) => {
+      if (disposed) {
+        // Component already unmounted before init finished
+        fn?.();
+        return;
+      }
+      cleanupFn = fn;
     });
 
     return () => {
       disposed = true;
       cancelAnimationFrame(animationId);
-      if (cleanup) cleanup();
+      cleanupFn?.();
+      // Remove the canvas from the DOM safely
+      if (canvasElement && canvasElement.parentNode === container) {
+        try {
+          container.removeChild(canvasElement);
+        } catch {
+          // Already removed
+        }
+      }
     };
-  }, [speed]);
+  }, [mounted, speed]);
 
   return (
     <div

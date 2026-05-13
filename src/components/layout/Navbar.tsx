@@ -1,10 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Menu, X, ArrowRight } from "lucide-react";
+import TransitionLink from "@/components/motion/TransitionLink";
 
 const navLinks = [
   { label: "About", href: "/about" },
@@ -39,6 +39,11 @@ export default function Navbar() {
     };
   }, [mobileOpen]);
 
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
+
   return (
     <>
       <nav
@@ -55,7 +60,7 @@ export default function Navbar() {
       >
         <div className="container-site flex items-center justify-between h-[72px]">
           {/* Logo */}
-          <Link href="/" className="flex items-center group" aria-label="ACM SVNIT Home">
+          <TransitionLink href="/" className="flex items-center group" aria-label="ACM SVNIT Home">
             <Image
               src="/acm-logo.png"
               alt="ACM SVNIT Logo"
@@ -64,14 +69,14 @@ export default function Navbar() {
               priority
               className="h-9 tablet:h-11 w-auto"
             />
-          </Link>
+          </TransitionLink>
 
           {/* Desktop Nav Links */}
           <div className="hidden tablet:flex items-center gap-8">
             {navLinks.map((link) => {
               const isActive = pathname === link.href;
               return (
-                <Link
+                <TransitionLink
                   key={link.href}
                   href={link.href}
                   className="relative text-sm font-body font-medium transition-colors duration-200"
@@ -90,7 +95,7 @@ export default function Navbar() {
                       style={{ backgroundColor: "var(--accent)" }}
                     />
                   )}
-                </Link>
+                </TransitionLink>
               );
             })}
           </div>
@@ -131,7 +136,7 @@ export default function Navbar() {
           {navLinks.map((link, i) => {
             const isActive = pathname === link.href;
             return (
-              <Link
+              <TransitionLink
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
@@ -154,7 +159,7 @@ export default function Navbar() {
                 >
                   {link.label}
                 </span>
-              </Link>
+              </TransitionLink>
             );
           })}
           <a

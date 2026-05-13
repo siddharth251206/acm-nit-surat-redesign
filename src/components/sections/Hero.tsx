@@ -1,59 +1,18 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
 import { ArrowRight, ChevronDown } from "lucide-react";
-import WireframeBackground from "@/components/three/WireframeBackground";
+
+// Dynamic import with SSR disabled — Three.js never runs on server,
+// so there's zero hydration mismatch risk. No server HTML to conflict with.
+const WireframeBackground = dynamic(
+  () => import("@/components/three/WireframeBackground"),
+  { ssr: false }
+);
 
 export default function Hero() {
-  const heroRef = useRef<HTMLElement>(null);
-  const textRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    // Parallax on scroll using GSAP
-    let cleanup: (() => void) | undefined;
-
-    const initGSAP = async () => {
-      try {
-        const gsapModule = await import("gsap");
-        const scrollTriggerModule = await import("gsap/ScrollTrigger");
-        const gsap = gsapModule.default;
-        const ScrollTrigger = scrollTriggerModule.ScrollTrigger;
-
-        gsap.registerPlugin(ScrollTrigger);
-
-        let ctx = gsap.context(() => {
-          if (!heroRef.current || !textRef.current) return;
-
-          // Parallax: hero text moves up at 0.4x speed
-          gsap.to(textRef.current, {
-            yPercent: -30,
-            ease: "none",
-            scrollTrigger: {
-              trigger: heroRef.current,
-              start: "top top",
-              end: "bottom top",
-              scrub: 1.5,
-            },
-          });
-        }, heroRef);
-
-        cleanup = () => {
-          ctx.revert();
-        };
-      } catch {
-        // GSAP not available — graceful degradation
-      }
-    };
-
-    initGSAP();
-    return () => {
-      if (cleanup) cleanup();
-    };
-  }, []);
-
   return (
     <section
-      ref={heroRef}
       id="hero"
       className="relative w-full overflow-hidden"
       style={{
@@ -61,12 +20,11 @@ export default function Hero() {
         backgroundColor: "var(--bg-primary)",
       }}
     >
-      {/* Three.js Wireframe Background */}
+      {/* Three.js Wireframe Background — client-only */}
       <WireframeBackground opacity={0.35} speed={1} />
 
       {/* Hero Content */}
       <div
-        ref={textRef}
         className="relative z-10 container-site flex flex-col justify-center"
         style={{
           minHeight: "100vh",
@@ -75,7 +33,7 @@ export default function Hero() {
       >
         {/* Top-right CTA */}
         <div className="absolute top-[100px] right-[var(--gutter)] hidden tablet:block">
-          <a href="#explore" className="btn-primary">
+          <a href="#stats-bar" className="btn-primary">
             Explore <ArrowRight size={14} />
           </a>
         </div>
