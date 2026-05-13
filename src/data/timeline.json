@@ -1,0 +1,37 @@
+[
+  {
+    "year": 2012,
+    "title": "Chapter Founded",
+    "description": "ACM SVNIT was established as the official student chapter of ACM at NIT Surat, with a founding team of 15 members and a vision to build a technical culture on campus."
+  },
+  {
+    "year": 2014,
+    "title": "First National Hackathon Win",
+    "description": "An ACM SVNIT team won the Smart India Hackathon regional round, putting the chapter on the national map for competitive engineering."
+  },
+  {
+    "year": 2016,
+    "title": "100 Members Milestone",
+    "description": "The chapter crossed 100 active members, expanded to 4 technical domains, and began hosting inter-college events and workshops."
+  },
+  {
+    "year": 2018,
+    "title": "Code Clash Launched",
+    "description": "The flagship competitive programming contest 'Code Clash' was launched, attracting participants from over 30 colleges in its inaugural edition."
+  },
+  {
+    "year": 2020,
+    "title": "Digital Transformation",
+    "description": "Adapted to fully remote operations during the pandemic. Launched online workshops, virtual hackathons, and a Discord community that grew to 500+ members."
+  },
+  {
+    "year": 2022,
+    "title": "Open Source Initiative",
+    "description": "Launched the Open Source domain, with members contributing to major projects during Hacktoberfest and GSoC. Published 3 open-source tools used by 1000+ developers."
+  },
+  {
+    "year": 2024,
+    "title": "National Recognition",
+    "description": "Recognized as one of the top ACM student chapters in India. Hosted the Build With AI Hackathon with 200+ participants and industry mentors from Google and Microsoft."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "proj-001",
+    "name": "CodeBoard",
+    "domain": "Web Development",
+    "description": "A collaborative code editor with real-time multi-cursor support, syntax highlighting for 20+ languages, and integrated terminal. Built for pair programming sessions during hackathons.",
+    "techStack": ["React", "Socket.io", "Monaco Editor", "Node.js"],
+    "github": "https://github.com/acm-svnit/codeboard",
+    "demo": "https://codeboard.acmsvnit.in",
+    "contributors": 4
+  },
+  {
+    "id": "proj-002",
+    "name": "PlacePrep CLI",
+    "domain": "Competitive Programming",
+    "description": "A command-line tool that fetches daily coding problems from LeetCode and Codeforces, tracks progress, and generates performance analytics for placement preparation.",
+    "techStack": ["Python", "Click", "SQLite", "Rich"],
+    "github": "https://github.com/acm-svnit/placeprep-cli",
+    "demo": null,
+    "contributors": 2
+  },
+  {
+    "id": "proj-003",
+    "name": "SentimentScope",
+    "domain": "AI/ML",
+    "description": "A real-time sentiment analysis dashboard for Twitter/X data. Uses fine-tuned BERT models to classify public opinion on trending topics with 92% accuracy.",
+    "techStack": ["Python", "PyTorch", "HuggingFace", "FastAPI", "React"],
+    "github": "https://github.com/acm-svnit/sentimentscope",
+    "demo": null,
+    "contributors": 3
+  },
+  {
+    "id": "proj-004",
+    "name": "NetGuard",
+    "domain": "Cybersecurity",
+    "description": "An open-source network monitoring tool that detects suspicious traffic patterns, port scans, and potential intrusion attempts using rule-based and ML-based detection.",
+    "techStack": ["Go", "eBPF", "React", "InfluxDB"],
+    "github": "https://github.com/acm-svnit/netguard",
+    "demo": null,
+    "contributors": 5
+  },
+  {
+    "id": "proj-005",
+    "name": "EventFlow",
+    "domain": "Web Development",
+    "description": "An event management platform built for college technical festivals. Features registration, QR check-in, real-time attendance tracking, and automated certificate generation.",
+    "techStack": ["Next.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
+    "github": "https://github.com/acm-svnit/eventflow",
+    "demo": "https://eventflow.acmsvnit.in",
+    "contributors": 6
+  },
+  {
+    "id": "proj-006",
+    "name": "GitStats",
+    "domain": "Open Source",
+    "description": "A GitHub contribution visualizer that generates beautiful SVG cards showcasing a developer's open-source journey, commit patterns, and language diversity.",
+    "techStack": ["TypeScript", "SVG", "GitHub API", "Vercel"],
+    "github": "https://github.com/acm-svnit/gitstats",
+    "demo": "https://gitstats.acmsvnit.in",
+    "contributors": 3
+  },
+  {
+    "id": "proj-007",
+    "name": "SmartNotes",
+    "domain": "AI/ML",
+    "description": "An AI-powered note-taking app that auto-generates summaries, flashcards, and mind maps from lecture transcripts and handwritten notes using GPT-4 and OCR.",
+    "techStack": ["React Native", "OpenAI API", "Tesseract", "Firebase"],
+    "github": "https://github.com/acm-svnit/smartnotes",
+    "demo": null,
+    "contributors": 4
+  },
+  {
+    "id": "proj-008",
+    "name": "DSA Visualizer",
+    "domain": "Competitive Programming",
+    "description": "An interactive web app that visualizes sorting algorithms, graph traversals, tree operations, and dynamic programming solutions step-by-step with adjustable speed.",
+    "techStack": ["React", "D3.js", "TypeScript", "Framer Motion"],
+    "github": "https://github.com/acm-svnit/dsa-visualizer",
+    "demo": "https://dsa.acmsvnit.in",
+    "contributors": 3
+  }
+]

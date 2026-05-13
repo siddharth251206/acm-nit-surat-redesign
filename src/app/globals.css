@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   ACM SVNIT — Design System Tokens
+   ============================================ */
+
+@font-face {
+  font-family: 'Clash Display';
+  src: url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700,800&display=swap') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cabinet Grotesk';
+  src: url('https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@100,200,300,400,500,600,700,800&display=swap') format('woff2');
+  font-display: swap;
+}
+
+:root {
+  /* Backgrounds */
+  --bg-primary: #0A0A0A;
+  --bg-secondary: #111111;
+  --bg-tertiary: #1A1A1A;
+
+  /* Accent */
+  --accent: #E8593C;
+  --accent-hover: #F06B4E;
+
+  /* Text */
+  --text-primary: #F5F0E8;
+  --text-secondary: #888780;
+  --text-muted: #4A4A48;
+
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.08);
+  --border-hover: rgba(255, 255, 255, 0.15);
+
+  /* Typography */
+  --font-display: 'Clash Display', sans-serif;
+  --font-body: 'Cabinet Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Layout */
+  --max-width: 1440px;
+  --gutter: clamp(1.5rem, 6vw, 6rem);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Navbar */
+  --navbar-height: 72px;
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ============================================
+   Typography
+   ============================================ */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-secondary);
+  font-size: clamp(0.938rem, 1.2vw, 1.125rem);
+  line-height: 1.7;
+}
+
+/* ============================================
+   Accent Highlight
+   ============================================ */
+
+.text-accent {
+  color: var(--accent);
+}
+
+.text-accent-hover:hover {
+  color: var(--accent-hover);
+}
+
+/* ============================================
+   Layout Utilities
+   ============================================ */
+
+.container-site {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter);
+  width: 100%;
+}
+
+.section-padding {
+  padding-top: clamp(4rem, 10vh, 8rem);
+  padding-bottom: clamp(4rem, 10vh, 8rem);
+}
+
+/* ============================================
+   Borders & Cards
+   ============================================ */
+
+.border-subtle {
+  border: 1px solid var(--border);
+}
+
+.border-subtle-hover {
+  border: 1px solid var(--border);
+  transition: border-color 0.3s ease;
+}
+
+.border-subtle-hover:hover {
+  border-color: var(--border-hover);
+}
+
+/* ============================================
+   Button Styles
+   ============================================ */
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.875rem;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.75rem;
+  background-color: transparent;
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.875rem;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  border-color: var(--border-hover);
+  color: var(--accent);
+}
+
+/* ============================================
+   Mono Labels / Tags
+   ============================================ */
+
+.tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--accent);
+  padding: 0.25rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.mono-label {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ============================================
+   Selection & Scrollbar
+   ============================================ */
+
+::selection {
+  background-color: var(--accent);
+  color: var(--bg-primary);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* ============================================
+   Reduced Motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ============================================
+   Focus Styles (Accessibility)
+   ============================================ */
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ============================================
+   Responsive Utilities
+   ============================================ */
+
+.hide-mobile {
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .hide-mobile {
+    display: block;
+  }
+}
+
+.show-mobile {
+  display: block;
+}
+
+@media (min-width: 640px) {
+  .show-mobile {
+    display: none;
+  }
+}

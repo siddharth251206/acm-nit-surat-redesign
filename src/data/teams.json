@@ -1,0 +1,212 @@
+[
+  {
+    "year": "2024-25",
+    "isCurrent": true,
+    "members": [
+      {
+        "name": "Aarav Mehta",
+        "role": "President",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/aaravmehta",
+        "github": "https://github.com/aaravmehta"
+      },
+      {
+        "name": "Priya Sharma",
+        "role": "VP Technical",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/priyasharma",
+        "github": "https://github.com/priyasharma"
+      },
+      {
+        "name": "Rohan Patel",
+        "role": "VP Creative",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/rohanpatel",
+        "github": "https://github.com/rohanpatel"
+      },
+      {
+        "name": "Ananya Desai",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/ananyadesai",
+        "github": "https://github.com/ananyadesai"
+      },
+      {
+        "name": "Karthik Nair",
+        "role": "AI/ML Domain Lead",
+        "roleGroup": "Technical",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/karthiknair",
+        "github": "https://github.com/karthiknair"
+      },
+      {
+        "name": "Ishita Gupta",
+        "role": "Web Dev Domain Lead",
+        "roleGroup": "Technical",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/ishitagupta",
+        "github": "https://github.com/ishitagupta"
+      },
+      {
+        "name": "Arjun Reddy",
+        "role": "Cybersecurity Lead",
+        "roleGroup": "Technical",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/arjunreddy",
+        "github": "https://github.com/arjunreddy"
+      },
+      {
+        "name": "Sneha Verma",
+        "role": "Design Lead",
+        "roleGroup": "Creative",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/snehaverma",
+        "github": "https://github.com/snehaverma"
+      },
+      {
+        "name": "Manish Joshi",
+        "role": "Events Coordinator",
+        "roleGroup": "Operations",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/manishjoshi",
+        "github": "https://github.com/manishjoshi"
+      },
+      {
+        "name": "Divya Iyer",
+        "role": "PR & Outreach",
+        "roleGroup": "Operations",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/divyaiyer",
+        "github": "https://github.com/divyaiyer"
+      }
+    ]
+  },
+  {
+    "year": "2023-24",
+    "isCurrent": false,
+    "members": [
+      {
+        "name": "Vikram Singh",
+        "role": "President",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/vikramsingh",
+        "github": "https://github.com/vikramsingh"
+      },
+      {
+        "name": "Meera Krishnan",
+        "role": "VP Technical",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/meerakrishnan",
+        "github": "https://github.com/meerakrishnan"
+      },
+      {
+        "name": "Rahul Agarwal",
+        "role": "VP Creative",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/rahulagarwal",
+        "github": "https://github.com/rahulagarwal"
+      },
+      {
+        "name": "Nisha Patel",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/nishapatel",
+        "github": "https://github.com/nishapatel"
+      },
+      {
+        "name": "Aditya Kumar",
+        "role": "AI/ML Domain Lead",
+        "roleGroup": "Technical",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/adityakumar",
+        "github": "https://github.com/adityakumar"
+      },
+      {
+        "name": "Tanvi Shah",
+        "role": "Web Dev Domain Lead",
+        "roleGroup": "Technical",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/tanvishah",
+        "github": "https://github.com/tanvishah"
+      },
+      {
+        "name": "Siddharth Rao",
+        "role": "CP Domain Lead",
+        "roleGroup": "Technical",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/siddharthrao",
+        "github": "https://github.com/siddharthrao"
+      },
+      {
+        "name": "Pooja Bhatt",
+        "role": "Design Lead",
+        "roleGroup": "Creative",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/poojabhatt",
+        "github": "https://github.com/poojabhatt"
+      }
+    ]
+  },
+  {
+    "year": "2022-23",
+    "isCurrent": false,
+    "members": [
+      {
+        "name": "Harsh Trivedi",
+        "role": "President",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/harshtrivedi",
+        "github": "https://github.com/harshtrivedi"
+      },
+      {
+        "name": "Shreya Mishra",
+        "role": "VP Technical",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/shreyamishra",
+        "github": "https://github.com/shreyamishra"
+      },
+      {
+        "name": "Nikhil Verma",
+        "role": "VP Creative",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/nikhilverma",
+        "github": "https://github.com/nikhilverma"
+      },
+      {
+        "name": "Riya Chauhan",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/riyachauhan",
+        "github": "https://github.com/riyachauhan"
+      },
+      {
+        "name": "Amit Saxena",
+        "role": "Systems Lead",
+        "roleGroup": "Technical",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/amitsaxena",
+        "github": "https://github.com/amitsaxena"
+      },
+      {
+        "name": "Kavya Nambiar",
+        "role": "Web Dev Lead",
+        "roleGroup": "Technical",
+        "photo": "/team/placeholder.jpg",
+        "linkedin": "https://linkedin.com/in/kavyanambiar",
+        "github": "https://github.com/kavyanambiar"
+      }
+    ]
+  }
+]

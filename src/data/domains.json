@@ -1,0 +1,56 @@
+[
+  {
+    "id": "domain-aiml",
+    "name": "Artificial Intelligence & ML",
+    "icon": "Brain",
+    "shortDescription": "Building intelligent systems that learn, reason, and adapt.",
+    "description": "Our AI/ML vertical explores the frontier of machine learning, deep learning, natural language processing, and computer vision. Members work on research projects, participate in Kaggle competitions, and build practical applications that solve real-world problems. From fine-tuning transformers to deploying edge ML models, we cover the full spectrum of modern AI engineering.",
+    "projects": ["SentimentScope", "SmartNotes"],
+    "technologies": ["PyTorch", "TensorFlow", "HuggingFace", "OpenAI API", "scikit-learn"]
+  },
+  {
+    "id": "domain-systems",
+    "name": "Systems & Networks",
+    "icon": "Server",
+    "shortDescription": "Understanding the infrastructure that powers everything.",
+    "description": "The Systems vertical dives deep into operating systems, distributed computing, networking protocols, and cloud infrastructure. Members learn about container orchestration, service meshes, database internals, and systems programming in Go, Rust, and C. We believe that understanding systems is what separates engineers from developers.",
+    "projects": ["NetGuard"],
+    "technologies": ["Go", "Rust", "Docker", "Kubernetes", "Linux"]
+  },
+  {
+    "id": "domain-web",
+    "name": "Web Development",
+    "icon": "Globe",
+    "shortDescription": "Crafting modern, performant web experiences.",
+    "description": "Our Web Development domain covers the entire stack — from responsive frontend design to scalable backend architecture. Members build production-grade applications using modern frameworks, learn about web performance optimization, accessibility, and design systems. We emphasize clean architecture, type safety, and developer experience.",
+    "projects": ["CodeBoard", "EventFlow"],
+    "technologies": ["Next.js", "React", "TypeScript", "Node.js", "PostgreSQL"]
+  },
+  {
+    "id": "domain-cp",
+    "name": "Competitive Programming",
+    "icon": "Code",
+    "shortDescription": "Sharpening algorithmic thinking and problem-solving.",
+    "description": "The CP vertical is where algorithms meet sport. We host weekly contests, study groups for ICPC preparation, and structured learning paths covering data structures, graph theory, dynamic programming, and advanced topics like segment trees and FFT. Members regularly compete on Codeforces, LeetCode, and AtCoder.",
+    "projects": ["PlacePrep CLI", "DSA Visualizer"],
+    "technologies": ["C++", "Python", "Codeforces", "LeetCode", "ICPC"]
+  },
+  {
+    "id": "domain-cyber",
+    "name": "Cybersecurity",
+    "icon": "Shield",
+    "shortDescription": "Defending systems, breaking assumptions.",
+    "description": "Our Cybersecurity domain covers offensive and defensive security — from CTF competitions and penetration testing to secure code review and threat modelling. Members learn about web application security, binary exploitation, cryptography fundamentals, and incident response. We regularly participate in national-level CTFs.",
+    "projects": ["NetGuard"],
+    "technologies": ["Burp Suite", "Wireshark", "Metasploit", "Python", "Linux"]
+  },
+  {
+    "id": "domain-opensource",
+    "name": "Open Source",
+    "icon": "GitBranch",
+    "shortDescription": "Contributing to the global developer ecosystem.",
+    "description": "The Open Source vertical encourages members to contribute to established open-source projects and build their own. We participate in programs like GSoC, Hacktoberfest, and MLH Fellowship. Members learn Git workflows, collaborative development, code review practices, and how to maintain sustainable open-source projects.",
+    "projects": ["GitStats"],
+    "technologies": ["Git", "GitHub", "TypeScript", "Rust", "Go"]
+  }
+]

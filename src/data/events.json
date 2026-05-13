@@ -1,0 +1,92 @@
+[
+  {
+    "id": "event-001",
+    "title": "Build With AI Hackathon",
+    "type": "Hackathon",
+    "date": "2024-10-15",
+    "location": "SVNIT Campus",
+    "description": "A 24-hour hackathon challenging participants to build innovative AI-powered solutions. Over 200 participants across 50 teams competed for prizes worth ₹1,00,000.",
+    "coverGradient": "linear-gradient(135deg, #1a1a2e, #e8593c22)"
+  },
+  {
+    "id": "event-002",
+    "title": "Introduction to Competitive Programming",
+    "type": "Workshop",
+    "date": "2024-09-20",
+    "location": "Computer Centre, SVNIT",
+    "description": "A hands-on workshop covering fundamental data structures, algorithms, and strategies for competitive programming contests on Codeforces and LeetCode.",
+    "coverGradient": "linear-gradient(135deg, #0d1117, #1a1a3e)"
+  },
+  {
+    "id": "event-003",
+    "title": "CyberSec CTF Challenge",
+    "type": "Competition",
+    "date": "2024-08-10",
+    "location": "Online",
+    "description": "A Capture The Flag event testing skills in web exploitation, reverse engineering, cryptography, and forensics. Open to all engineering students.",
+    "coverGradient": "linear-gradient(135deg, #111111, #2a1a2e)"
+  },
+  {
+    "id": "event-004",
+    "title": "Deep Learning from Scratch",
+    "type": "Workshop",
+    "date": "2024-07-05",
+    "location": "Seminar Hall, SVNIT",
+    "description": "A three-day intensive workshop covering neural networks, backpropagation, CNNs, and practical model building using PyTorch from the ground up.",
+    "coverGradient": "linear-gradient(135deg, #1a1a1a, #e8593c11)"
+  },
+  {
+    "id": "event-005",
+    "title": "Open Source Sprint",
+    "type": "Hackathon",
+    "date": "2024-03-22",
+    "location": "SVNIT Campus",
+    "description": "A weekend-long open source contribution sprint where students contributed to popular GitHub repositories and learned Git workflows, issue triage, and PR review.",
+    "coverGradient": "linear-gradient(135deg, #0a0a0a, #1a3a2e)"
+  },
+  {
+    "id": "event-006",
+    "title": "Tech Talk: Scaling Systems at Google",
+    "type": "Talk",
+    "date": "2024-02-14",
+    "location": "Auditorium, SVNIT",
+    "description": "A guest lecture by a Google SRE engineer on distributed systems, load balancing, and the infrastructure behind Google Search.",
+    "coverGradient": "linear-gradient(135deg, #111122, #1a1a1a)"
+  },
+  {
+    "id": "event-007",
+    "title": "Web Dev Bootcamp",
+    "type": "Workshop",
+    "date": "2024-01-18",
+    "location": "Computer Centre, SVNIT",
+    "description": "A comprehensive full-stack web development bootcamp covering React, Next.js, Tailwind CSS, and backend APIs with Node.js and Express.",
+    "coverGradient": "linear-gradient(135deg, #0d0d1a, #e8593c15)"
+  },
+  {
+    "id": "event-008",
+    "title": "Code Clash 3.0",
+    "type": "Competition",
+    "date": "2023-11-25",
+    "location": "Online (HackerRank)",
+    "description": "The flagship competitive programming contest of ACM SVNIT. Three rounds of increasing difficulty, with participants from 50+ colleges across India.",
+    "coverGradient": "linear-gradient(135deg, #1a0a1a, #2a1a1e)"
+  },
+  {
+    "id": "event-009",
+    "title": "Blockchain & Web3 Workshop",
+    "type": "Workshop",
+    "date": "2023-10-05",
+    "location": "Seminar Hall, SVNIT",
+    "description": "An introductory workshop on blockchain technology, smart contracts with Solidity, and building decentralized applications on Ethereum.",
+    "coverGradient": "linear-gradient(135deg, #111111, #1e1a2e)"
+  },
+  {
+    "id": "event-010",
+    "title": "Orientation: Welcome to ACM",
+    "type": "Talk",
+    "date": "2023-08-15",
+    "location": "Auditorium, SVNIT",
+    "description": "The annual orientation event introducing new students to ACM SVNIT, its domains, culture, and opportunities for growth and collaboration.",
+    "coverGradient": "linear-gradient(135deg, #0a0a0a, #e8593c0a)"
+  }
+]
