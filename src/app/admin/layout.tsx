@@ -2,12 +2,16 @@
 
 import AdminSidebar from "./components/AdminSidebar";
 import { ToastProvider } from "./components/Toast";
+import { notFound } from "next/navigation";
 
 export default function AdminLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  if (process.env.NODE_ENV === "production") {
+    notFound();
+  }
   return (
     <ToastProvider>
       <div

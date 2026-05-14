@@ -4,38 +4,253 @@
     "label": "Team of 2025",
     "isCurrent": true,
     "members": [
-      { "name": "Smit Marakna",      "role": "Chairperson",       "roleGroup": "Executive",   "photo": "/team/2025/smit-marakna.jpg",       "email": "", "linkedin": "", "github": ""  },
-      { "name": "Chetan Kalsariya",  "role": "Vice-Chairperson",  "roleGroup": "Executive",   "photo": "/team/2025/chetan-kalsariya.jpg",   "email": "", "linkedin": "", "github": ""  },
-      { "name": "Jay Pipaliya",      "role": "Secretary",         "roleGroup": "Executive",   "photo": "/team/2025/jay-pipaliya.jpg",       "email": "", "linkedin": "", "github": ""  },
-      { "name": "Archit Savaliya",   "role": "Secretary",         "roleGroup": "Executive",   "photo": "/team/2025/archit-savaliya.jpg",    "email": "", "linkedin": "", "github": ""  },
-      { "name": "Dhruv Patel",       "role": "Treasurer",         "roleGroup": "Executive",   "photo": "/team/2025/dhruv-patel.jpg",        "email": "", "linkedin": "", "github": ""  },
-      { "name": "Anand Tiwari",      "role": "Treasurer",         "roleGroup": "Executive",   "photo": "/team/2025/anand-tiwari.jpg",       "email": "", "linkedin": "", "github": ""  },
-      { "name": "Foram Gandhi",      "role": "Community Head",    "roleGroup": "Operations",  "photo": "/team/2025/foram-gandhi.jpg",       "email": "", "linkedin": "", "github": ""  },
-      { "name": "Miten Gandhi",      "role": "Developer",         "roleGroup": "Technical",   "photo": "/team/2025/miten-gandhi.jpg",       "email": "", "linkedin": "", "github": ""  },
-      { "name": "Purv Kabaria",      "role": "Developer",         "roleGroup": "Technical",   "photo": "/team/2025/purv-kabaria.jpg",       "email": "", "linkedin": "", "github": "",  "twitter": "" },
-      { "name": "Om Satodiya",       "role": "Developer",         "roleGroup": "Technical",   "photo": "/team/2025/om-satodiya.jpg",        "email": "", "linkedin": "", "github": ""  },
-      { "name": "Vanshik Godeshwar", "role": "Problem Setter",    "roleGroup": "Technical",   "photo": "/team/2025/vanshik-godeshwar.jpg",  "email": "", "linkedin": "", "github": ""  },
-      { "name": "Deepak Challa",     "role": "Problem Setter",    "roleGroup": "Technical",   "photo": "/team/2025/deepak-challa.jpg",      "email": "", "linkedin": "", "github": ""  },
-      { "name": "Anshul Reddy",      "role": "Problem Setter",    "roleGroup": "Technical",   "photo": "/team/2025/anshul-reddy.jpg",       "email": "", "linkedin": "", "github": ""  },
-      { "name": "Angela Dutta",      "role": "Designer",          "roleGroup": "Creative",    "photo": "/team/2025/angela-dutta.jpg",       "email": "", "linkedin": "", "github": ""  },
-      { "name": "Vanisha Karkera",   "role": "Designer",          "roleGroup": "Creative",    "photo": "/team/2025/vanisha-karkera.jpg",    "email": "", "linkedin": "", "github": ""  },
-      { "name": "Harshli Andhariya", "role": "Core Member",       "roleGroup": "Operations",  "photo": "/team/2025/harshli-andhariya.jpg",  "email": "", "linkedin": "", "github": ""  },
-      { "name": "Manthan Chauhan",   "role": "Core Member",       "roleGroup": "Operations",  "photo": "/team/2025/manthan-chauhan.jpg",    "email": "", "linkedin": "", "github": ""  },
-      { "name": "Govind",            "role": "Core Member",       "roleGroup": "Operations",  "photo": "/team/2025/govind.jpg",             "email": "", "linkedin": "", "github": ""  }
+      {
+        "name": "Smit Marakna",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2025/221.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Chetan Kalsariya",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2025/222.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Jay Pipaliya",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2025/223.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Archit Savaliya",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2025/224.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Dhruv Patel",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2025/225.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Anand Tiwari",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2025/226.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Foram Gandhi",
+        "role": "Community Head",
+        "roleGroup": "Operations",
+        "photo": "/team/2025/227.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Miten Gandhi",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2025/228.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Purv Kabaria",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2025/229.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": "",
+        "twitter": ""
+      },
+      {
+        "name": "Om Satodiya",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2025/230.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Vanshik Godeshwar",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2025/231.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Deepak Challa",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2025/232.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Anshul Reddy",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2025/233.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Angela Dutta",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2025/234.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Vanishka Karkera",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2025/235.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Harshli Andhariya",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2025/236.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Manthan Chauhan",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2025/237.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      },
+      {
+        "name": "Govind",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2025/238.jpg",
+        "email": "",
+        "linkedin": "",
+        "github": ""
+      }
     ]
   },
-  { "year": "2024", "label": "Team of 2024", "isCurrent": false, "members": [] },
-  { "year": "2023", "label": "Team of 2023", "isCurrent": false, "members": [] },
-  { "year": "2022", "label": "Team of 2022", "isCurrent": false, "members": [] },
-  { "year": "2021", "label": "Team of 2021", "isCurrent": false, "members": [] },
-  { "year": "2020", "label": "Team of 2020", "isCurrent": false, "members": [] },
-  { "year": "2019", "label": "Team of 2019", "isCurrent": false, "members": [] },
-  { "year": "2018", "label": "Team of 2018", "isCurrent": false, "members": [] },
-  { "year": "2017", "label": "Team of 2017", "isCurrent": false, "members": [] },
-  { "year": "2016", "label": "Team of 2016", "isCurrent": false, "members": [] },
-  { "year": "2015", "label": "Team of 2015", "isCurrent": false, "members": [] },
-  { "year": "2014", "label": "Team of 2014", "isCurrent": false, "members": [] },
-  { "year": "2013", "label": "Team of 2013", "isCurrent": false, "members": [] },
-  { "year": "2012", "label": "Team of 2012", "isCurrent": false, "members": [] },
-  { "year": "2011", "label": "Team of 2011", "isCurrent": false, "members": [] }
+  {
+    "year": "2024",
+    "label": "Team of 2024",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2023",
+    "label": "Team of 2023",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2022",
+    "label": "Team of 2022",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2021",
+    "label": "Team of 2021",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2020",
+    "label": "Team of 2020",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2019",
+    "label": "Team of 2019",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2018",
+    "label": "Team of 2018",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2017",
+    "label": "Team of 2017",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2016",
+    "label": "Team of 2016",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2015",
+    "label": "Team of 2015",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2014",
+    "label": "Team of 2014",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2013",
+    "label": "Team of 2013",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2012",
+    "label": "Team of 2012",
+    "isCurrent": false,
+    "members": []
+  },
+  {
+    "year": "2011",
+    "label": "Team of 2011",
+    "isCurrent": false,
+    "members": []
+  }
 ]

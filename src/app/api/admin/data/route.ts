@@ -9,6 +9,9 @@ function getFilePath(file: string) {
 }
 
 export async function GET(req: NextRequest) {
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json({ error: 'Not found' }, { status: 404 });
+  }
   try {
     const file = req.nextUrl.searchParams.get('file');
     if (!file || !ALLOWED_FILES.includes(file)) {
@@ -28,6 +31,9 @@ export async function GET(req: NextRequest) {
 }
 
 export async function POST(req: NextRequest) {
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json({ error: 'Not found' }, { status: 404 });
+  }
   try {
     const file = req.nextUrl.searchParams.get('file');
     if (!file || !ALLOWED_FILES.includes(file)) {

@@ -3,6 +3,9 @@ import { join, extname } from 'path';
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req: NextRequest) {
+  if (process.env.NODE_ENV === 'production') {
+    return NextResponse.json({ error: 'Not found' }, { status: 404 });
+  }
   try {
     const formData = await req.formData();
     const file = formData.get('file') as File | null;
