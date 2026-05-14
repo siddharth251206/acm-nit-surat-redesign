@@ -7,6 +7,21 @@ import { Calendar, MapPin } from "lucide-react";
 import PageTransition from "@/components/motion/PageTransition";
 import eventsData from "@/data/events.json";
 
+interface EventItem {
+  id: string;
+  title: string;
+  type: string;
+  date: string;
+  location: string;
+  description: string;
+  coverGradient?: string;
+  image?: string;
+  registrationUrl?: string;
+  tags?: string[];
+}
+
+const typedEventsData = eventsData as EventItem[];
+
 const WireframeBackground = dynamic(
   () => import("@/components/three/WireframeBackground"),
   { ssr: false }
@@ -18,7 +33,7 @@ export default function EventsPage() {
   const [activeFilter, setActiveFilter] = useState("All");
 
   const filtered = useMemo(() => {
-    const sorted = [...eventsData].sort(
+    const sorted = [...typedEventsData].sort(
       (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
     );
     if (activeFilter === "All") return sorted;
@@ -51,7 +66,7 @@ export default function EventsPage() {
             className="mt-4"
             style={{ color: "var(--text-secondary)", maxWidth: "480px" }}
           >
-            {eventsData.length} events hosted and counting. Workshops,
+            {typedEventsData.length} events hosted and counting. Workshops,
             hackathons, guest lectures, and more.
           </p>
         </div>

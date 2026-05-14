@@ -15,6 +15,19 @@ import {
 import PageTransition from "@/components/motion/PageTransition";
 import domainsData from "@/data/domains.json";
 
+interface DomainItem {
+  id: string;
+  name: string;
+  icon: string;
+  shortDescription: string;
+  description: string;
+  image?: string;
+  projects: string[];
+  technologies: string[];
+}
+
+const typedDomainsData = domainsData as DomainItem[];
+
 const WireframeBackground = dynamic(
   () => import("@/components/three/WireframeBackground"),
   { ssr: false }
@@ -91,7 +104,7 @@ export default function DomainsPage() {
         </section>
 
         {/* Domain Sections */}
-        {domainsData.map((domain, index) => {
+        {typedDomainsData.map((domain, index) => {
           const IconComp = iconMap[domain.icon] || Code;
           const isEven = index % 2 === 0;
 
