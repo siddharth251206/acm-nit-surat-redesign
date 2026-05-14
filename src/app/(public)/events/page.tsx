@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import { Calendar, MapPin } from "lucide-react";
 import PageTransition from "@/components/motion/PageTransition";
 import eventsData from "@/data/events.json";
@@ -101,10 +102,16 @@ export default function EventsPage() {
               style={{ backgroundColor: "var(--bg-secondary)" }}
             >
               {/* Cover */}
-              <div
-                className="h-44 w-full"
-                style={{ background: event.coverGradient }}
-              />
+              {event.image ? (
+                <div className="relative h-44 w-full">
+                  <Image src={event.image} alt={event.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
+                </div>
+              ) : (
+                <div
+                  className="h-44 w-full"
+                  style={{ background: event.coverGradient }}
+                />
+              )}
 
               {/* Content */}
               <div className="p-6">

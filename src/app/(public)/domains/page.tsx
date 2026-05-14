@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
+import Image from "next/image";
 import {
   Brain,
   Server,
@@ -206,24 +207,36 @@ export default function DomainsPage() {
 
                 {/* Visual placeholder for right/left column */}
                 <div
-                  className="hidden tablet:flex items-center justify-center"
+                  className="flex items-center justify-center relative mt-8 tablet:mt-0"
                   style={{ direction: "ltr" }}
                 >
-                  <div
-                    className="w-full aspect-square max-w-[400px] rounded-lg"
-                    style={{
-                      background: `linear-gradient(135deg, var(--bg-tertiary), var(--bg-primary))`,
-                      border: "1px solid var(--border)",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <IconComp
-                      size={80}
-                      style={{ color: "var(--text-muted)", opacity: 0.2 }}
-                    />
-                  </div>
+                  {domain.image ? (
+                    <div className="relative w-full aspect-square max-w-[400px] rounded-lg overflow-hidden" style={{ border: "1px solid var(--border)" }}>
+                      <Image
+                        src={domain.image}
+                        alt={domain.name}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 50vw, 400px"
+                      />
+                    </div>
+                  ) : (
+                    <div
+                      className="w-full aspect-square max-w-[400px] rounded-lg"
+                      style={{
+                        background: `linear-gradient(135deg, var(--bg-tertiary), var(--bg-primary))`,
+                        border: "1px solid var(--border)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                      }}
+                    >
+                      <IconComp
+                        size={80}
+                        style={{ color: "var(--text-muted)", opacity: 0.2 }}
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             </section>

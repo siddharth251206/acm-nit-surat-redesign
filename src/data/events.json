@@ -1,19 +1,19 @@
 [
   {
     "id": "event-001",
-    "title": "Build With AI Hackathon",
+    "title": "DotSlash 9.0",
     "type": "Hackathon",
-    "date": "2024-10-15",
-    "location": "SVNIT Campus",
+    "date": "2026-03-21",
+    "location": "SVNIT Guest House",
     "description": "A 24-hour hackathon challenging participants to build innovative AI-powered solutions. Over 200 participants across 50 teams competed for prizes worth ₹1,00,000.",
     "coverGradient": "linear-gradient(135deg, #1a1a2e, #e8593c22)"
   },
   {
     "id": "event-002",
-    "title": "Introduction to Competitive Programming",
-    "type": "Workshop",
-    "date": "2024-09-20",
-    "location": "Computer Centre, SVNIT",
+    "title": "Echelon",
+    "type": "Hackathon",
+    "date": "2026-02-10",
+    "location": "SVNIT Guest House",
     "description": "A hands-on workshop covering fundamental data structures, algorithms, and strategies for competitive programming contests on Codeforces and LeetCode.",
     "coverGradient": "linear-gradient(135deg, #0d1117, #1a1a3e)"
   },

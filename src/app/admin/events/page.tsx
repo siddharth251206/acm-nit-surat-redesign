@@ -13,6 +13,7 @@ interface Event {
   location: string;
   description: string;
   coverGradient?: string;
+  image?: string;
   registrationUrl?: string;
   tags?: string[];
 }
@@ -87,7 +88,10 @@ export default function EventsAdmin() {
           <div style={{ marginBottom: "0.75rem" }}><label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Description *</label><textarea style={{ ...inputStyle, minHeight: "100px", resize: "vertical" }} value={editing.description} onChange={(e) => setEditing({ ...editing, description: e.target.value })} /></div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginBottom: "0.75rem" }}>
             <div><label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Cover Gradient</label><input style={inputStyle} value={editing.coverGradient || ""} onChange={(e) => setEditing({ ...editing, coverGradient: e.target.value })} /></div>
-            <div><label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Registration URL</label><input style={inputStyle} value={editing.registrationUrl || ""} onChange={(e) => setEditing({ ...editing, registrationUrl: e.target.value })} /></div>
+            <div><label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Image URL</label><input style={inputStyle} value={editing.image || ""} onChange={(e) => setEditing({ ...editing, image: e.target.value })} placeholder="/images/event.jpg" /></div>
+          </div>
+          <div style={{ marginBottom: "0.75rem" }}>
+            <label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Registration URL</label><input style={inputStyle} value={editing.registrationUrl || ""} onChange={(e) => setEditing({ ...editing, registrationUrl: e.target.value })} />
           </div>
           <div style={{ marginBottom: "1rem" }}>
             <label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Tags</label>

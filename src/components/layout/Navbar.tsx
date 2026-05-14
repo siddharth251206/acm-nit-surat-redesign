@@ -61,7 +61,7 @@ export default function Navbar() {
       >
         <div className="container-site flex items-center justify-between h-[72px]">
           {/* Logo */}
-          <TransitionLink href="/" className="flex items-center group" aria-label="ACM SVNIT Home">
+          <TransitionLink href="/" className="flex items-center gap-3 group" aria-label="ACM SVNIT Home">
             <Image
               src="/acm-logo.png"
               alt="ACM SVNIT Logo"
@@ -70,6 +70,12 @@ export default function Navbar() {
               priority
               className="h-9 tablet:h-11 w-auto"
             />
+            <span
+              className="font-display tracking-tight"
+              style={{ fontSize: "clamp(1rem, 3vw, 1.25rem)", fontWeight: 800, color: "var(--text-primary)" }}
+            >
+              <span style={{ color: "var(--accent)" }}>ACM</span> NIT SURAT
+            </span>
           </TransitionLink>
 
           {/* Desktop Nav Links */}

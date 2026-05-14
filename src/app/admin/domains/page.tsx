@@ -11,6 +11,7 @@ interface Domain {
   icon: string;
   shortDescription: string;
   description: string;
+  image?: string;
   projects: string[];
   technologies: string[];
 }
@@ -66,6 +67,7 @@ export default function DomainsAdmin() {
             <div><label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Name *</label><input style={inputStyle} value={editing.name} onChange={(e) => setEditing({ ...editing, name: e.target.value })} /></div>
             <div><label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Icon name (Lucide)</label><input style={inputStyle} value={editing.icon} onChange={(e) => setEditing({ ...editing, icon: e.target.value })} placeholder="e.g. Brain, Globe, Shield" /></div>
           </div>
+          <div style={{ marginBottom: "0.75rem" }}><label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Image URL</label><input style={inputStyle} value={editing.image || ""} onChange={(e) => setEditing({ ...editing, image: e.target.value })} placeholder="/domains/ai.jpg" /></div>
           <div style={{ marginBottom: "0.75rem" }}><label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Short Description</label><input style={inputStyle} value={editing.shortDescription} onChange={(e) => setEditing({ ...editing, shortDescription: e.target.value })} /></div>
           <div style={{ marginBottom: "0.75rem" }}><label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Full Description</label><textarea style={{ ...inputStyle, minHeight: "120px", resize: "vertical" }} value={editing.description} onChange={(e) => setEditing({ ...editing, description: e.target.value })} /></div>
           <div style={{ marginBottom: "0.75rem" }}><label style={{ fontSize: "0.75rem", color: "#888", display: "block", marginBottom: "4px" }}>Technologies (comma-separated)</label><input style={inputStyle} value={editing.technologies.join(", ")} onChange={(e) => setEditing({ ...editing, technologies: e.target.value.split(",").map((t) => t.trim()).filter(Boolean) })} /></div>

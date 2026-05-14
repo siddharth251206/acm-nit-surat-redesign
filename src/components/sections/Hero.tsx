@@ -129,84 +129,54 @@ export default function Hero() {
               className="object-cover object-center"
               sizes="(max-width: 768px) 100vw, 90vw"
             />
+          </div>
 
-            {/* Dark gradient overlay — bottom heavy for text */}
-            <div
-              className="absolute inset-0"
+          {/* Quote placed below the image */}
+          <div className="mt-10 flex flex-col items-center text-center px-4">
+            <p
+              className="font-display italic"
               style={{
-                background:
-                  "linear-gradient(to top, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.3) 40%, rgba(10,10,10,0.05) 70%, rgba(10,10,10,0.15) 100%)",
+                fontSize: "clamp(1.2rem, 3vw, 1.75rem)",
+                fontWeight: 500,
+                color: "var(--text-primary)",
+                lineHeight: 1.4,
+                maxWidth: "800px"
               }}
-            />
-
-            {/* Accent glow line at top */}
-            <div
-              className="absolute top-0 left-0 right-0"
-              style={{
-                height: "2px",
-                background: "linear-gradient(90deg, transparent, var(--accent), transparent)",
-                opacity: 0.6,
-              }}
-            />
-
-            {/* Quote overlay */}
-            <div
-              className="absolute bottom-0 left-0 right-0 p-6 tablet:p-10 flex flex-col tablet:flex-row items-end justify-between gap-4"
             >
-              <div style={{ maxWidth: "600px" }}>
-                <p
-                  className="font-display italic"
-                  style={{
-                    fontSize: "clamp(0.9rem, 2.5vw, 1.35rem)",
-                    fontWeight: 500,
-                    color: "#f5f0e8",
-                    lineHeight: 1.4,
-                    textShadow: "0 2px 12px rgba(0,0,0,0.5)",
-                  }}
-                >
-                  &ldquo;We&rsquo;re not just another tech chapter. We&rsquo;re the chapter that actually builds.&rdquo;
-                </p>
-                <div className="flex items-center gap-3 mt-3">
-                  <div
-                    style={{
-                      width: "32px",
-                      height: "2px",
-                      backgroundColor: "var(--accent)",
-                    }}
-                  />
-                  <span
-                    className="font-mono"
-                    style={{
-                      fontSize: "0.75rem",
-                      color: "var(--accent)",
-                      letterSpacing: "0.1em",
-                      textTransform: "uppercase",
-                    }}
-                  >
-                    Team 2025
-                  </span>
-                </div>
-              </div>
-
-              {/* Subtle badge */}
-              <span
-                className="font-mono hidden mobile:block"
+              &ldquo;Learning never exhausts the mind.&rdquo;
+            </p>
+            <div className="flex items-center gap-3 mt-5">
+              <div
                 style={{
-                  fontSize: "0.65rem",
-                  color: "rgba(245,240,232,0.5)",
-                  letterSpacing: "0.12em",
+                  width: "40px",
+                  height: "2px",
+                  backgroundColor: "var(--accent)",
+                }}
+              />
+              <span
+                className="font-mono"
+                style={{
+                  fontSize: "0.85rem",
+                  color: "var(--accent)",
+                  letterSpacing: "0.1em",
                   textTransform: "uppercase",
-                  whiteSpace: "nowrap",
                 }}
               >
-                ACM NIT Surat • Est. {siteData.founded}
+                Leonardo Da Vinci
               </span>
+              <div
+                style={{
+                  width: "40px",
+                  height: "2px",
+                  backgroundColor: "var(--accent)",
+                }}
+              />
             </div>
           </div>
         </div>
 
         {/* Bottom spacing that blends into next section */}
-        <div style={{ height: "2rem" }} />
+        <div style={{ height: "4rem" }} />
       </section>
     </>
   );

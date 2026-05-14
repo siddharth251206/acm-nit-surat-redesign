@@ -93,7 +93,7 @@ export default function Footer() {
         {/* Top Row */}
         <div className="flex flex-col tablet:flex-row items-start tablet:items-center justify-between gap-8 mb-12">
           {/* Logo */}
-          <TransitionLink href="/" className="flex items-center">
+          <TransitionLink href="/" className="flex items-center gap-3">
             <Image
               src="/acm-logo.png"
               alt="ACM SVNIT Logo"
@@ -101,6 +101,12 @@ export default function Footer() {
               height={50}
               className="h-9 tablet:h-10 w-auto opacity-90 hover:opacity-100 transition-opacity"
             />
+            <span
+              className="font-display tracking-tight"
+              style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--text-primary)" }}
+            >
+              <span style={{ color: "var(--accent)" }}>ACM</span> NIT SURAT
+            </span>
           </TransitionLink>
 
           {/* Nav Links */}

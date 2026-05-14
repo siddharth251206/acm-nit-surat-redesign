@@ -38,6 +38,19 @@ const iconMap: Record<string, React.ElementType> = {
  */
 export default function DomainsHorizontalScroll() {
   const sectionRef = useRef<HTMLElement>(null);
+  const scrollTrackRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    if (scrollTrackRef.current) {
+      scrollTrackRef.current.scrollBy({ left: -350, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollTrackRef.current) {
+      scrollTrackRef.current.scrollBy({ left: 350, behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     if (!sectionRef.current) return;
@@ -66,21 +79,41 @@ export default function DomainsHorizontalScroll() {
       style={{ backgroundColor: "var(--bg-primary)" }}
     >
       {/* Section Header */}
-      <div className="container-site pt-16 tablet:pt-24 pb-8">
-        <span className="mono-label mb-4 block">// DOMAINS</span>
-        <h2
-          className="font-display"
-          style={{
-            fontSize: "clamp(2rem, 4vw, 3rem)",
-            fontWeight: 700,
-          }}
-        >
-          what we <span style={{ color: "var(--accent)" }}>explore</span>
-        </h2>
+      <div className="container-site pt-16 tablet:pt-24 pb-8 flex items-end justify-between">
+        <div>
+          <span className="mono-label mb-4 block">// DOMAINS</span>
+          <h2
+            className="font-display"
+            style={{
+              fontSize: "clamp(2rem, 4vw, 3rem)",
+              fontWeight: 700,
+            }}
+          >
+            what we <span style={{ color: "var(--accent)" }}>explore</span>
+          </h2>
+        </div>
+
+        {/* Navigation Controls */}
+        <div className="hidden tablet:flex gap-3">
+          <button onClick={scrollLeft} className="p-2 rounded-full transition-colors" style={{ border: "1px solid var(--border)", color: "var(--text-secondary)" }} onMouseEnter={(e) => { e.currentTarget.style.color = "#fff"; e.currentTarget.style.borderColor = "var(--accent)"; }} onMouseLeave={(e) => { e.currentTarget.style.color = "var(--text-secondary)"; e.currentTarget.style.borderColor = "var(--border)"; }} aria-label="Scroll left">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <button onClick={scrollRight} className="p-2 rounded-full transition-colors" style={{ border: "1px solid var(--border)", color: "var(--text-secondary)" }} onMouseEnter={(e) => { e.currentTarget.style.color = "#fff"; e.currentTarget.style.borderColor = "var(--accent)"; }} onMouseLeave={(e) => { e.currentTarget.style.color = "var(--text-secondary)"; e.currentTarget.style.borderColor = "var(--border)"; }} aria-label="Scroll right">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+
+      {/* Mobile Swipe Instruction */}
+      <div className="container-site tablet:hidden mb-4">
+        <p className="flex items-center gap-2 font-mono" style={{ fontSize: "0.75rem", color: "var(--text-muted)" }}>
+          Swipe left to explore <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </p>
       </div>
 
       {/* Cards — horizontal scroll on desktop, grid on mobile */}
       <div
+        ref={scrollTrackRef}
         className="domains-scroll-track"
         style={{
           display: "flex",
