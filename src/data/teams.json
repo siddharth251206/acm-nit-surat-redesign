@@ -173,79 +173,2248 @@
     "year": "2024",
     "label": "Team of 2024",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Param Pathak",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2024/203.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Vatsal Koisa",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2024/204.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Anoushka Sharma",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2024/205.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Raj Vadodaria",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2024/206.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Hanusha Jain",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2024/207.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Shivam Dhamesha",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2024/208.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Lakshita Jawandhiya",
+        "role": "Community Head",
+        "roleGroup": "Operations",
+        "photo": "/team/2024/209.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Bhavik Dodda",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2024/210.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Lavanya Pinjarkar",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2024/211.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Yash Patel",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2024/212.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Dweep Modi",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2024/213.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Harshal Malaviya",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2024/214.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Parthiv Jasoliya",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2024/215.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Aasutosh Baraiya",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2024/216.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Priya Patel",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2024/217.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Aditya Rai",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2024/218.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Darshan Vekariya",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2024/219.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Vandit Patel",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2024/220.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": false,
+        "facebook": false,
+        "twitter": true
+      }
+    ]
   },
   {
     "year": "2023",
     "label": "Team of 2023",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Garvit Shah",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2023/185.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Bhavya Hirani",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2023/186.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Swayam Desai",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2023/187.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Rushil Jariwala",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2023/188.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Anushka Kundu",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2023/189.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Manav Chauhan",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2023/190.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Rutvik Ranpariya",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2023/191.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Yagnik Dhameliya",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2023/192.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Jainesh Machhi",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2023/193.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Vinayaka Iyer",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2023/194.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Shubh Suthar",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2023/195.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Mahesh Thakkar",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2023/196.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Raj Modh",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2023/197.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Krishna Pathak",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2023/198.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Yatra Vaghasia",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2023/199.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Kaushik Bhowmick",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2023/200.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Ved Chadderwala",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2023/201.jpg",
+        "linkedin": true,
+        "github": true,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Parth Sharma",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2023/202.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2022",
     "label": "Team of 2022",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Vishvesh Trivedi",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2022/168.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Arya Shahi",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2022/169.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Harshil Nakum",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2022/170.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Nirdeshi Jotangia",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2022/171.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Yash Shah",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2022/172.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Mudit Nema",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2022/173.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Prince Kumar",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2022/174.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Bhavik Dholakiya",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2022/175.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Sneh Patel",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2022/176.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Sneharsh Belsare",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2022/177.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Aniket Rana",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2022/178.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Pakhi Shrivastava",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2022/179.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Tanishka Sonavane",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2022/180.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Manish Lalwani",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2022/181.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Umar Sharieff",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2022/182.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Dev Patel",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2022/183.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Vivek Tangudu",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2022/184.jpg",
+        "linkedin": true,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2021",
     "label": "Team of 2021",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Keshav Gautam",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2021/151.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Gaurav Kumar",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2021/152.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Jaina Vaishnav",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2021/153.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Riya Sharma",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2021/154.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Parva Patel",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2021/155.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Prince Shah",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2021/156.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Prashant Dodiya",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2021/157.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Shlok Patel",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2021/158.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Shankhanil Borthakur",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2021/159.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Harsh Malvi",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2021/160.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Mustafa Officewala",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2021/161.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Shubham Bhadada",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2021/162.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Mitali Kapoor",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2021/163.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Danish Ahmed",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2021/164.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Akanksha Chaurasia",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2021/165.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Manish Bawkar",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2021/166.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Astel Thottankara",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2021/167.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2020",
     "label": "Team of 2020",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Darshil Savaliya",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2020/134.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": true
+      },
+      {
+        "name": "Yamini Kabra",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2020/135.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Shikhar Sarang",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2020/136.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Smit Patel",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2020/137.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Shruti Bhatt",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2020/138.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Jay Chawla",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2020/139.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Rohit Bakoliya",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2020/140.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Hardik Upadhyay",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2020/141.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Sahil Bondre",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2020/142.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Jitendra Jat",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2020/143.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Jignesh Jinjala",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2020/144.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Shivangi Dubey",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2020/145.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Riya Singhal",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2020/146.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Krunal Rank",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2020/147.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Jeet Ganatra",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2020/148.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Mihir Khambhati",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2020/149.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Krupal Panchasara",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2020/150.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2019",
     "label": "Team of 2019",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Vedant Dalal",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2019/116.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Subham Agrawal",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2019/117.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Akash Gangani",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2019/118.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Hemant Chourasia",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2019/119.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Devanshi Bhatia",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2019/120.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Harshit Sodagar",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2019/121.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Rajat Sharma",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2019/122.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Jay Rathod",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2019/123.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Keshav Goyal",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2019/124.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Rishabh Kumar",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2019/125.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Ronik Gandhi",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2019/126.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Punit Jain",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2019/127.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Kunal Katariya",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2019/128.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Siddharth Kulkarni",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2019/129.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Kaneesha Gandhi",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2019/130.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Ishank Jain",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2019/131.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Pooja Nanavati",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2019/132.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Jaynil Shah",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2019/133.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2018",
     "label": "Team of 2018",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Akshay Busa",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2018/98.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Rogin Koshy",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2018/99.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Abhijeet Mathur",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2018/100.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Jenish Patel",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2018/103.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Jay Tandel",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2018/104.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Avinash Jaiswal",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2018/105.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Noel Aby Das",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2018/106.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Nikunj Khokhar",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2018/107.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Kruti Dharaiya",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2018/108.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Vivek Shah",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2018/109.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Vedansh Agarwal",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2018/110.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Sonai Nipane",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2018/111.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Siddharth Panikath",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2018/112.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Parthav Patel",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2018/113.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Mansi Sampat",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2018/114.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Deep Mistry",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2018/115.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2017",
     "label": "Team of 2017",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Deepanshu Sharma",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2017/79.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": true
+      },
+      {
+        "name": "Swapnil Patel",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2017/80.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": true
+      },
+      {
+        "name": "Vidhi Gandhi",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2017/81.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Sairam Naragoni",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2017/82.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Hunsil Ashar",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2017/83.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Aishwarya Solanki",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2017/84.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Charmi Khambhati",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2017/85.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Bharghvi Prajapati",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2017/86.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Vatsal Mehta",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2017/87.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Tanishka Khatri",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2017/88.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Sandeep Varma",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2017/89.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Simran Bawkar",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2017/90.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Rohit",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2017/91.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Priyansh Zalavadiya",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2017/92.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": true
+      },
+      {
+        "name": "Rinky Abraham",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2017/93.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Aarju Goyal",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2017/94.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": false,
+        "twitter": true
+      },
+      {
+        "name": "Vatsal Bhalodi",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2017/95.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Aarchi Patel",
+        "role": "Core Member",
+        "roleGroup": "Operations",
+        "photo": "/team/2017/96.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": true,
+        "facebook": true,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2016",
     "label": "Team of 2016",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Anshul Jain",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2016/65.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Pradeep Ch",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2016/66.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Radhesh Davulari",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2016/67.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Kiran Dhokane",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2016/68.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Ram Narayan Singh",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2016/69.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Mohith Damarapati",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2016/70.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Sachin Malepati",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2016/71.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Rajul Nahar",
+        "role": "Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2016/72.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Sanjay George",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2016/73.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Asmita Kumar",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2025/unknown.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Pawan Kolhe",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2016/75.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Pradeep Karwasra",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2016/76.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Manish Choudhary",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2016/77.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Sriyansh Srivastava",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2016/78.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2015",
     "label": "Team of 2015",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Yash Golechha",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2015/52.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Rohit Agarwal",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2015/53.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Ankit Kumar",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2015/54.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Lucky Srivastava",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2015/55.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Aakash Rana",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2015/56.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Adesh Kala",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2015/57.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Vishnu Teja",
+        "role": "Web Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2015/58.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Rahul Kanojia",
+        "role": "Web Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2015/59.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Rajan Kasodariya",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2015/60.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Riya Kothari",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2015/61.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Vineet Sethia",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2015/62.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Kushagra Chauhan",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2015/63.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Harsh Jadav",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2015/64.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2014",
     "label": "Team of 2014",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Jay Panchal",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2014/38.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Gurvinder Singh",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2014/39.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Prashant Arya",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2014/40.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Deepak Singh",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2025/unknown.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "VLNP Venkatesh",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2014/42.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Kushagra Shrivastava",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2025/unknown.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Palash Oswal",
+        "role": "Web Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2014/44.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Umang Singhal",
+        "role": "Web Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2014/45.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Vinay Kumar",
+        "role": "Problem Setter",
+        "roleGroup": "Technical",
+        "photo": "/team/2014/46.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Chaitanya Mattey",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2014/47.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Jay Bothra",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2014/48.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Saksham Kumar",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2014/49.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2013",
     "label": "Team of 2013",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Manav Prajapati",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2013/27.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Pallavi Khandelwal",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2013/28.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Vishal Singh",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2013/29.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Nishit Gajjar",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2013/30.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Tanisha Jain",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2013/31.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Sunil Raiyani",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2013/32.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Sukant Garg",
+        "role": "Web Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2013/33.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Ravi Ojha",
+        "role": "Designer",
+        "roleGroup": "Creative",
+        "photo": "/team/2013/34.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Kshama Jain",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2013/35.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Heer Narang",
+        "role": "Editor",
+        "roleGroup": "Creative",
+        "photo": "/team/2013/36.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2012",
     "label": "Team of 2012",
     "isCurrent": false,
-    "members": []
+    "members": [
+      {
+        "name": "Aman Verma",
+        "role": "Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2012/19.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Hari Ram Chaudhary",
+        "role": "Vice-Chairperson",
+        "roleGroup": "Executive",
+        "photo": "/team/2012/20.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Harsh Agrawal",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2012/21.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Saurabh Siddharth",
+        "role": "Secretary",
+        "roleGroup": "Executive",
+        "photo": "/team/2012/22.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Monika Daryani",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2012/23.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Praveen Chaudhary",
+        "role": "Treasurer",
+        "roleGroup": "Executive",
+        "photo": "/team/2025/unknown.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": false,
+        "twitter": false
+      },
+      {
+        "name": "Harsha Satya",
+        "role": "Web Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2012/25.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      },
+      {
+        "name": "Jitesh Sunhala",
+        "role": "Web Developer",
+        "roleGroup": "Technical",
+        "photo": "/team/2012/26.jpg",
+        "linkedin": false,
+        "github": false,
+        "email": false,
+        "facebook": true,
+        "twitter": false
+      }
+    ]
   },
   {
     "year": "2011",

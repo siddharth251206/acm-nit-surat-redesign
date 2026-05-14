@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "copy-team-photos": "node scripts/copy-team-photos.js"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",
