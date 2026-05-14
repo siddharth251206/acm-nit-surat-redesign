@@ -1,10 +1,6 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import { TransitionProvider } from "@/components/motion/TransitionContext";
-import PageCurtain from "@/components/motion/PageCurtain";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -42,12 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={jetbrainsMono.variable} suppressHydrationWarning>
       <body className="font-body antialiased" suppressHydrationWarning>
-        <TransitionProvider>
-          <PageCurtain />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </TransitionProvider>
+        {children}
       </body>
     </html>
   );

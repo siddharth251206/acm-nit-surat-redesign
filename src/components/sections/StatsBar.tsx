@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import siteData from "@/data/site.json";
 
 interface Stat {
   value: number;
@@ -8,10 +9,12 @@ interface Stat {
   label: string;
 }
 
+const yearsRunning = new Date().getFullYear() - parseInt(siteData.founded);
+
 const stats: Stat[] = [
   { value: 150, suffix: "+", label: "Members Active" },
   { value: 40, suffix: "+", label: "Events Hosted" },
-  { value: 12, suffix: "", label: "Years Running" },
+  { value: yearsRunning, suffix: "", label: "Years Running" },
   { value: 25, suffix: "+", label: "Projects Shipped" },
 ];
 

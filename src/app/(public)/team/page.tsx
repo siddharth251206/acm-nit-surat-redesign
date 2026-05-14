@@ -3,6 +3,7 @@
 import { useState, useMemo, useEffect } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Suspense } from "react";
+import Image from "next/image";
 import PageTransition from "@/components/motion/PageTransition";
 import teamsData from "@/data/teams.json";
 
@@ -11,18 +12,30 @@ interface Member {
   role: string;
   roleGroup: string;
   photo: string;
-  linkedin: string;
-  github: string;
   email?: string;
+  linkedin?: string;
+  github?: string;
+  twitter?: string;
 }
 
 interface TeamYear {
   year: string;
+  label?: string;
   isCurrent: boolean;
   members: Member[];
 }
 
 const teams = teamsData as TeamYear[];
+
+/* ── Helpers ───────────────────────── */
+function getInitials(name: string) {
+  return name
+    .split(" ")
+    .map((n) => n[0])
+    .join("")
+    .slice(0, 2)
+    .toUpperCase();
+}
 
 /* ── Social SVGs ───────────────────────── */
 function LinkedInIcon() {
@@ -41,34 +54,51 @@ function GitHubIcon() {
   );
 }
 
-/* ── Member Card ───────────────────────── */
+/* ── Member Card with Photo Fallback ───────────────────────── */
 function TeamCard({ member }: { member: Member }) {
+  const [imgError, setImgError] = useState(false);
+  const hasPhoto = member.photo && member.photo.trim() !== "";
+  const showPhoto = hasPhoto && !imgError;
+
   return (
     <div className="group border-subtle-hover rounded-md overflow-hidden transition-all duration-300 hover:-translate-y-1">
-      {/* Photo placeholder */}
+      {/* Photo / Initials Fallback */}
       <div
         className="aspect-square w-full relative overflow-hidden"
         style={{
-          background: `linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary))`,
+          background: "linear-gradient(135deg, var(--bg-tertiary), var(--bg-secondary))",
         }}
       >
-        {/* Initials as placeholder */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span
-            className="font-display text-4xl font-bold"
-            style={{ color: "var(--text-muted)", opacity: 0.5 }}
-          >
-            {member.name
-              .split(" ")
-              .map((n) => n[0])
-              .join("")}
-          </span>
-        </div>
+        {showPhoto ? (
+          <Image
+            src={member.photo}
+            alt={member.name}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div
+              className="w-20 h-20 rounded-full flex items-center justify-center"
+              style={{
+                backgroundColor: "var(--bg-primary)",
+                border: "2px solid var(--border)",
+              }}
+            >
+              <span
+                className="font-display text-xl font-bold"
+                style={{ color: "var(--accent)" }}
+              >
+                {getInitials(member.name)}
+              </span>
+            </div>
+          </div>
+        )}
 
         {/* Social icons on hover */}
-        <div
-          className="absolute bottom-3 left-3 right-3 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-        >
+        <div className="absolute bottom-3 left-3 right-3 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           {member.linkedin && (
             <a
               href={member.linkedin}
@@ -188,7 +218,7 @@ function TeamContent() {
   const router = useRouter();
 
   const currentTeam = teams.find((t) => t.isCurrent);
-  const defaultYear = currentTeam?.year || teams[0]?.year || "2024-25";
+  const defaultYear = currentTeam?.year || teams[0]?.year || "2025";
   const yearParam = searchParams.get("year");
   const [selectedYear, setSelectedYear] = useState(yearParam || defaultYear);
 
@@ -208,7 +238,7 @@ function TeamContent() {
   }, [selectedYear]);
 
   const grouped = useMemo(() => {
-    if (!selectedTeam) return {};
+    if (!selectedTeam || selectedTeam.members.length === 0) return {};
     const groups: Record<string, Member[]> = {};
     const order = ["Executive", "Technical", "Creative", "Operations"];
     for (const g of order) {
@@ -219,6 +249,7 @@ function TeamContent() {
   }, [selectedTeam]);
 
   const years = teams.map((t) => ({ year: t.year, isCurrent: t.isCurrent }));
+  const hasMembers = selectedTeam && selectedTeam.members.length > 0;
 
   return (
     <>
@@ -263,31 +294,39 @@ function TeamContent() {
 
       {/* Team Grid */}
       <section className="container-site section-padding">
-        {Object.entries(grouped).map(([group, members]) => (
-          <div key={group} className="mb-12 last:mb-0">
-            <h3
-              className="font-display mb-6 pb-3 border-b"
-              style={{
-                fontSize: "1.125rem",
-                fontWeight: 600,
-                borderColor: "var(--border)",
-                color: "var(--text-secondary)",
-              }}
-            >
-              {group}
-            </h3>
-            <div className="grid grid-cols-1 mobile:grid-cols-2 tablet:grid-cols-4 gap-6">
-              {members.map((member) => (
-                <TeamCard key={member.name + member.role} member={member} />
-              ))}
+        {hasMembers ? (
+          Object.entries(grouped).map(([group, members]) => (
+            <div key={group} className="mb-12 last:mb-0">
+              <h3
+                className="font-display mb-6 pb-3 border-b"
+                style={{
+                  fontSize: "1.125rem",
+                  fontWeight: 600,
+                  borderColor: "var(--border)",
+                  color: "var(--text-secondary)",
+                }}
+              >
+                {group}
+              </h3>
+              <div className="grid grid-cols-2 mobile:grid-cols-3 tablet:grid-cols-4 gap-6">
+                {members.map((member) => (
+                  <TeamCard key={member.name + member.role} member={member} />
+                ))}
+              </div>
             </div>
+          ))
+        ) : (
+          <div className="text-center py-16">
+            <p
+              className="font-display text-lg mb-2"
+              style={{ color: "var(--text-secondary)" }}
+            >
+              No team data for this year yet.
+            </p>
+            <p style={{ color: "var(--text-muted)", fontSize: "0.875rem" }}>
+              Team data for {selectedYear} will be added through the admin panel.
+            </p>
           </div>
-        ))}
-
-        {!selectedTeam && (
-          <p style={{ color: "var(--text-muted)" }}>
-            No team data found for this year.
-          </p>
         )}
       </section>
     </>

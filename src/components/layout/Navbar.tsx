@@ -12,6 +12,7 @@ const navLinks = [
   { label: "Events", href: "/events" },
   { label: "Domains", href: "/domains" },
   { label: "Projects", href: "/projects" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {

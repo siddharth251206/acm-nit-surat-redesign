@@ -1,23 +1,23 @@
 [
   {
-    "year": 2012,
+    "year": 2005,
     "title": "Chapter Founded",
-    "description": "ACM SVNIT was established as the official student chapter of ACM at NIT Surat, with a founding team of 15 members and a vision to build a technical culture on campus."
+    "description": "ACM NIT Surat student chapter was established as an integral part of the International Learned Society for Computing, ACM, with a vision to inspire dialogue and resource-sharing in the field of computing."
+  },
+  {
+    "year": 2010,
+    "title": "100 Members Milestone",
+    "description": "The chapter crossed 100 active members and expanded its technical domains, beginning to host inter-college events and workshops across Gujarat."
   },
   {
     "year": 2014,
     "title": "First National Hackathon Win",
-    "description": "An ACM SVNIT team won the Smart India Hackathon regional round, putting the chapter on the national map for competitive engineering."
-  },
-  {
-    "year": 2016,
-    "title": "100 Members Milestone",
-    "description": "The chapter crossed 100 active members, expanded to 4 technical domains, and began hosting inter-college events and workshops."
+    "description": "An ACM NIT Surat team won the Smart India Hackathon regional round, putting the chapter on the national map for competitive engineering."
   },
   {
     "year": 2018,
-    "title": "Code Clash Launched",
-    "description": "The flagship competitive programming contest 'Code Clash' was launched, attracting participants from over 30 colleges in its inaugural edition."
+    "title": "Epiphany & Dotslash Launched",
+    "description": "The flagship events Epiphany and Dotslash were launched, quickly gaining nationwide recognition and attracting participants from colleges across India."
   },
   {
     "year": 2020,
@@ -27,7 +27,7 @@
   {
     "year": 2022,
     "title": "Open Source Initiative",
-    "description": "Launched the Open Source domain, with members contributing to major projects during Hacktoberfest and GSoC. Published 3 open-source tools used by 1000+ developers."
+    "description": "Launched the Open Source domain, with members contributing to major projects during Hacktoberfest and GSoC. Published open-source tools used by 1000+ developers."
   },
   {
     "year": 2024,

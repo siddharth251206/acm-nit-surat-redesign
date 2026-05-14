@@ -2,9 +2,8 @@
 
 import dynamic from "next/dynamic";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import siteData from "@/data/site.json";
 
-// Dynamic import with SSR disabled — Three.js never runs on server,
-// so there's zero hydration mismatch risk. No server HTML to conflict with.
 const WireframeBackground = dynamic(
   () => import("@/components/three/WireframeBackground"),
   { ssr: false }
@@ -20,10 +19,8 @@ export default function Hero() {
         backgroundColor: "var(--bg-primary)",
       }}
     >
-      {/* Three.js Wireframe Background — client-only */}
       <WireframeBackground opacity={0.35} speed={1} />
 
-      {/* Hero Content */}
       <div
         className="relative z-10 container-site flex flex-col justify-center"
         style={{
@@ -31,14 +28,12 @@ export default function Hero() {
           paddingTop: "var(--navbar-height)",
         }}
       >
-        {/* Top-right CTA */}
         <div className="absolute top-[100px] right-[var(--gutter)] hidden tablet:block">
           <a href="#stats-bar" className="btn-primary">
             Explore <ArrowRight size={14} />
           </a>
         </div>
 
-        {/* Main Headline */}
         <div className="max-w-[900px]">
           <h1
             className="font-display leading-[0.95] tracking-tight"
@@ -56,9 +51,7 @@ export default function Hero() {
           </h1>
         </div>
 
-        {/* Bottom Subtexts */}
         <div className="absolute bottom-12 left-[var(--gutter)] right-[var(--gutter)] flex flex-col mobile:flex-row justify-between items-end gap-6">
-          {/* Bottom-left */}
           <p
             className="font-body max-w-[280px]"
             style={{
@@ -67,11 +60,14 @@ export default function Hero() {
               lineHeight: 1.5,
             }}
           >
-            Established in 2012. <br />
-            Evolving ever since.
+            {siteData.heroSubLeft.split("\n").map((line, i) => (
+              <span key={i}>
+                {line}
+                {i === 0 && <br />}
+              </span>
+            ))}
           </p>
 
-          {/* Scroll Indicator */}
           <div className="flex flex-col items-center gap-2">
             <span
               className="mono-label"
@@ -86,7 +82,6 @@ export default function Hero() {
             />
           </div>
 
-          {/* Bottom-right */}
           <p
             className="font-body max-w-[280px] text-right hidden mobile:block"
             style={{
@@ -95,9 +90,12 @@ export default function Hero() {
               lineHeight: 1.5,
             }}
           >
-            We&apos;re not just another tech chapter.
-            <br />
-            We&apos;re the chapter that actually builds.
+            {siteData.heroSubRight.split("\n").map((line, i) => (
+              <span key={i}>
+                {line}
+                {i === 0 && <br />}
+              </span>
+            ))}
           </p>
         </div>
       </div>

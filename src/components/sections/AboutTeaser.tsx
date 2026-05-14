@@ -59,7 +59,7 @@ export default function AboutTeaser() {
           <div className="reveal-item" style={{ transitionDelay: "0.15s" }}>
             <p className="mb-4">
               The ACM SVNIT Student Chapter is the official student chapter of
-              the Association for Computing Machinery at NIT Surat. Since 2012,
+              the Association for Computing Machinery at NIT Surat. Since 2005,
               we have been the driving force behind technical culture on campus.
             </p>
             <p className="mb-8">

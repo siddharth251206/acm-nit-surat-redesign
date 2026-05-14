@@ -2,6 +2,7 @@
 
 import TransitionLink from "@/components/motion/TransitionLink";
 import Image from "next/image";
+import siteData from "@/data/site.json";
 
 const footerLinks = [
   { label: "About", href: "/about" },
@@ -9,6 +10,7 @@ const footerLinks = [
   { label: "Events", href: "/events" },
   { label: "Domains", href: "/domains" },
   { label: "Projects", href: "/projects" },
+  { label: "Contact", href: "/contact" },
 ];
 
 function GitHubIcon({ size = 20 }: { size?: number }) {
@@ -103,13 +105,13 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="flex flex-col mobile:flex-row items-center justify-between gap-4">
           <p className="mono-label" style={{ fontSize: "0.7rem" }}>
-            © {new Date().getFullYear()} ACM SVNIT Student Chapter
+            Made with ❤️ by ACM NIT Surat • © {new Date().getFullYear()}
           </p>
           <p
-            className="mono-label"
-            style={{ fontSize: "0.7rem", color: "var(--text-muted)" }}
+            className="mono-label text-center mobile:text-right"
+            style={{ fontSize: "0.7rem", color: "var(--text-muted)", maxWidth: "400px" }}
           >
-            Building technology. Building people.
+            {siteData.tagline}
           </p>
         </div>
       </div>
