@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join } from 'path';
 import { NextRequest, NextResponse } from 'next/server';
 
-const ALLOWED_FILES = ['teams', 'events', 'projects', 'domains', 'timeline', 'site'];
+const ALLOWED_FILES = ['teams', 'events', 'projects', 'domains', 'timeline', 'site', 'homepage'];
 
 function getFilePath(file: string) {
   return join(process.cwd(), 'src', 'data', file + '.json');

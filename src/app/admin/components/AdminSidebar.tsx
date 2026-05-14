@@ -4,6 +4,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import {
   LayoutDashboard,
+  Home,
   Users,
   Calendar,
   Wrench,
@@ -15,6 +16,7 @@ import {
 
 const navItems = [
   { label: "Dashboard", href: "/admin", icon: LayoutDashboard },
+  { label: "Homepage", href: "/admin/homepage", icon: Home },
   { label: "Teams", href: "/admin/teams", icon: Users },
   { label: "Events", href: "/admin/events", icon: Calendar },
   { label: "Projects", href: "/admin/projects", icon: Wrench },

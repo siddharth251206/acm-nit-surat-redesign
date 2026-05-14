@@ -1,11 +1,17 @@
 "use client";
 
 import { useState, useMemo, useEffect } from "react";
+import dynamic from "next/dynamic";
 import { useSearchParams, useRouter } from "next/navigation";
 import { Suspense } from "react";
 import Image from "next/image";
 import PageTransition from "@/components/motion/PageTransition";
 import teamsData from "@/data/teams.json";
+
+const WireframeBackground = dynamic(
+  () => import("@/components/three/WireframeBackground"),
+  { ssr: false }
+);
 
 interface Member {
   name: string;
@@ -293,11 +299,11 @@ function TeamContent() {
 
   return (
     <>
-      {/* Hero */}
       <section
         className="relative w-full"
         style={{ backgroundColor: "var(--bg-primary)" }}
       >
+        <WireframeBackground opacity={0.2} speed={0.4} />
         <div
           className="container-site flex flex-col justify-center"
           style={{ minHeight: "50vh", paddingTop: "var(--navbar-height)" }}

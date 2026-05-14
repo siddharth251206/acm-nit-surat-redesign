@@ -1,9 +1,15 @@
 "use client";
 
 import { useState, useMemo } from "react";
+import dynamic from "next/dynamic";
 import { ExternalLink, Users } from "lucide-react";
 import PageTransition from "@/components/motion/PageTransition";
 import projectsData from "@/data/projects.json";
+
+const WireframeBackground = dynamic(
+  () => import("@/components/three/WireframeBackground"),
+  { ssr: false }
+);
 
 function GitHubSmallIcon() {
   return (
@@ -28,11 +34,11 @@ export default function ProjectsPage() {
 
   return (
     <PageTransition>
-      {/* Hero */}
       <section
         className="relative w-full"
         style={{ backgroundColor: "var(--bg-primary)" }}
       >
+        <WireframeBackground opacity={0.2} speed={0.4} />
         <div
           className="container-site flex flex-col justify-center"
           style={{ minHeight: "50vh", paddingTop: "var(--navbar-height)" }}

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import dynamic from "next/dynamic";
 import {
   Brain,
   Server,
@@ -12,6 +13,11 @@ import {
 } from "lucide-react";
 import PageTransition from "@/components/motion/PageTransition";
 import domainsData from "@/data/domains.json";
+
+const WireframeBackground = dynamic(
+  () => import("@/components/three/WireframeBackground"),
+  { ssr: false }
+);
 
 const iconMap: Record<string, React.ElementType> = {
   Brain,
@@ -49,11 +55,11 @@ export default function DomainsPage() {
   return (
     <PageTransition>
       <div ref={pageRef}>
-        {/* Hero */}
         <section
           className="relative w-full"
           style={{ backgroundColor: "var(--bg-primary)" }}
         >
+          <WireframeBackground opacity={0.2} speed={0.4} />
           <div
             className="container-site flex flex-col justify-center"
             style={{ minHeight: "50vh", paddingTop: "var(--navbar-height)" }}

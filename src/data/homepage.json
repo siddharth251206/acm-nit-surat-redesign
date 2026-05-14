@@ -1,0 +1,56 @@
+{
+  "whatWeDo": {
+    "events": [
+      {
+        "title": "Tech Talks and Workshops",
+        "description": "Our ACM Student Chapter hosts regular Tech Talks and Workshops. These events provide invaluable insights into cutting-edge technologies, trends, and research. Through interactive sessions, attendees have the opportunity to enhance their technical skills and broaden their knowledge base. From artificial intelligence to fullstack development, our diverse range of topics ensures that members stay at the forefront of the rapidly evolving tech landscape."
+      },
+      {
+        "title": "Hackathons and Coding Competitions",
+        "description": "Engage your problem-solving prowess in our thrilling Hackathons and Coding Competitions. These events challenge participants to collaborate, innovate, and create solutions to real-world problems within a limited timeframe. Whether you're a seasoned coder or a beginner, these events offer an excellent platform to showcase your talents and connect with like-minded individuals. Expect adrenaline-pumping challenges and the chance to win exciting prizes!"
+      },
+      {
+        "title": "Building Real-world Projects",
+        "description": "Members engage in hands-on project development, honing practical skills, problem-solving abilities, and teamwork. Diverse project teams collaborate on web applications, mobile apps, and hardware-based projects, fostering innovation. The experience strengthens technical expertise and project management capabilities, preparing members for real-world challenges."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How can I become a member of the ACM Student Chapter?",
+        "answer": "Becoming a member is easy! We have a simple interview process that allows you to join our vibrant community of tech enthusiasts. The tentative dates for the interviews are 19-20th August, prepare well!"
+      },
+      {
+        "question": "Do I need prior technical knowledge to participate in events?",
+        "answer": "Not at all! Our events cater to a diverse audience with varying levels of technical expertise. Whether you're a beginner or an expert, you'll find value in our events, workshops, and activities."
+      },
+      {
+        "question": "Can I participate in events if I'm not from a computer science background?",
+        "answer": "Absolutely! While ACM Student Chapter primarily focuses on computer science and related fields, we welcome students from all disciplines. Many of our events emphasize interdisciplinary collaboration, offering unique perspectives and opportunities for growth."
+      }
+    ],
+    "benefits": [
+      {
+        "title": "Enhance Technical Skills",
+        "description": "As a member of our ACM Student Chapter, you'll have access to workshops, tech talks, and coding competitions that will sharpen your technical skills. Stay updated on the latest technologies and gain hands-on experience through practical sessions."
+      },
+      {
+        "title": "Networking Opportunities",
+        "description": "Build a strong professional network by interacting with industry experts, faculty members, and like-minded students. Our flagship hackathon Dotslash provides an excellent platform to create connections that can open doors to future career opportunities."
+      },
+      {
+        "title": "Community and Friendship",
+        "description": "Join a welcoming community of tech enthusiasts who share your passion for technology. Participate in social gatherings and make lasting friendships with peers who can become valuable collaborators and mentors throughout your academic journey and beyond."
+      }
+    ]
+  },
+  "testimonials": [
+    {
+      "quote": "ACM NIT Surat chapter has been an incredible platform for me to enhance my technical skills; the engaging workshops and coding competitions have been both educational and fun!",
+      "name": "Anand"
+    },
+    {
+      "quote": "I am impressed with ACM NIT Surat's welcoming community, where I've made valuable connections and had the chance to participate in exciting coding competitions and hackathons.",
+      "name": "Arjun"
+    }
+  ]
+}
