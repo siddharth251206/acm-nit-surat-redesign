@@ -37,11 +37,48 @@ function InstagramIcon({ size = 20 }: { size?: number }) {
   );
 }
 
-const socialLinks = [
-  { icon: GitHubIcon, href: "https://github.com/acm-svnit", label: "GitHub" },
-  { icon: LinkedInIcon, href: "https://linkedin.com/company/acm-svnit", label: "LinkedIn" },
-  { icon: InstagramIcon, href: "https://instagram.com/acm.svnit", label: "Instagram" },
-];
+function FacebookIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+    </svg>
+  );
+}
+
+function TwitterIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
+
+function YouTubeIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+    </svg>
+  );
+}
+
+function MailIcon({ size = 20 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+      <rect width="20" height="16" x="2" y="4" rx="2" />
+      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+    </svg>
+  );
+}
+
+// Generate social links dynamically from site.json
+const socialLinks: { icon: any; href: string; label: string }[] = [];
+if (siteData.socials?.github) socialLinks.push({ icon: GitHubIcon, href: siteData.socials.github, label: "GitHub" });
+if (siteData.socials?.linkedin) socialLinks.push({ icon: LinkedInIcon, href: siteData.socials.linkedin, label: "LinkedIn" });
+if (siteData.socials?.instagram) socialLinks.push({ icon: InstagramIcon, href: siteData.socials.instagram, label: "Instagram" });
+if (siteData.socials?.facebook) socialLinks.push({ icon: FacebookIcon, href: siteData.socials.facebook, label: "Facebook" });
+if (siteData.socials?.twitter) socialLinks.push({ icon: TwitterIcon, href: siteData.socials.twitter, label: "Twitter" });
+if (siteData.socials?.youtube) socialLinks.push({ icon: YouTubeIcon, href: siteData.socials.youtube, label: "YouTube" });
+if (siteData.email) socialLinks.push({ icon: MailIcon, href: `mailto:${siteData.email}`, label: "Email" });
 
 export default function Footer() {
   return (
@@ -80,7 +117,7 @@ export default function Footer() {
           </div>
 
           {/* Social Icons */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center flex-wrap gap-3 tablet:gap-4">
             {socialLinks.map((social) => (
               <a
                 key={social.label}

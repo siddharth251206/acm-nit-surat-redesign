@@ -113,13 +113,13 @@ function TeamCard({ member }: { member: Member }) {
   const hasPhoto = member.photo && member.photo.trim() !== "";
   const showPhoto = hasPhoto && !imgError;
 
-  // Build social items — only show icons where value is truthy
-  const socials: { key: string; icon: React.ReactNode; href?: string }[] = [];
-  if (member.linkedin) socials.push({ key: "li", icon: <LinkedInIcon />, href: typeof member.linkedin === "string" ? member.linkedin : undefined });
-  if (member.github) socials.push({ key: "gh", icon: <GitHubIcon />, href: typeof member.github === "string" ? member.github : undefined });
-  if (member.email) socials.push({ key: "em", icon: <MailIcon />, href: typeof member.email === "string" ? `mailto:${member.email}` : undefined });
-  if (member.facebook) socials.push({ key: "fb", icon: <FacebookIcon />, href: typeof member.facebook === "string" ? member.facebook : undefined });
-  if (member.twitter) socials.push({ key: "tw", icon: <TwitterIcon />, href: typeof member.twitter === "string" ? member.twitter : undefined });
+  // Build social items — only show icons when we have a real URL (string), not boolean flags
+  const socials: { key: string; icon: React.ReactNode; href: string }[] = [];
+  if (typeof member.linkedin === "string" && member.linkedin) socials.push({ key: "li", icon: <LinkedInIcon />, href: member.linkedin });
+  if (typeof member.github === "string" && member.github) socials.push({ key: "gh", icon: <GitHubIcon />, href: member.github });
+  if (typeof member.email === "string" && member.email) socials.push({ key: "em", icon: <MailIcon />, href: `mailto:${member.email}` });
+  if (typeof member.facebook === "string" && member.facebook) socials.push({ key: "fb", icon: <FacebookIcon />, href: member.facebook });
+  if (typeof member.twitter === "string" && member.twitter) socials.push({ key: "tw", icon: <TwitterIcon />, href: member.twitter });
 
   return (
     <div className="border-subtle-hover rounded-md overflow-hidden transition-all duration-300 hover:-translate-y-1">
@@ -159,35 +159,37 @@ function TeamCard({ member }: { member: Member }) {
         )}
       </div>
 
-      {/* Info + Social Icons — side by side */}
-      <div className="p-4" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>
-        <div style={{ minWidth: 0 }}>
-          <p
-            className="font-display"
-            style={{ fontSize: "0.875rem", fontWeight: 500 }}
-          >
-            {member.name}
-          </p>
-          <p
-            className="font-mono mt-1"
-            style={{
-              fontSize: "0.75rem",
-              color: "var(--accent)",
-              letterSpacing: "0.02em",
-            }}
-          >
-            {member.role}
-          </p>
-        </div>
-        {socials.length > 0 && (
-          <div className="flex items-center gap-1.5" style={{ opacity: 1, flexShrink: 0 }}>
-            {socials.map((s) => (
-              <SocialBadge key={s.key} href={s.href} label={`${member.name} ${s.key}`}>
-                {s.icon}
-              </SocialBadge>
-            ))}
+      {/* Info + Social Icons */}
+      <div className="p-3 sm:p-4">
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", flexWrap: "wrap", gap: "4px" }}>
+          <div style={{ minWidth: 0, flex: "1 1 auto" }}>
+            <p
+              className="font-display"
+              style={{ fontSize: "clamp(0.7rem, 2.5vw, 0.875rem)", fontWeight: 500, lineHeight: 1.3, wordBreak: "break-word" }}
+            >
+              {member.name}
+            </p>
+            <p
+              className="font-mono mt-0.5 sm:mt-1"
+              style={{
+                fontSize: "clamp(0.6rem, 2vw, 0.75rem)",
+                color: "var(--accent)",
+                letterSpacing: "0.02em",
+              }}
+            >
+              {member.role}
+            </p>
           </div>
-        )}
+          {socials.length > 0 && (
+            <div className="flex items-center flex-wrap" style={{ gap: "2px", flexShrink: 0 }}>
+              {socials.map((s) => (
+                <SocialBadge key={s.key} href={s.href} label={`${member.name} ${s.key}`}>
+                  {s.icon}
+                </SocialBadge>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );
