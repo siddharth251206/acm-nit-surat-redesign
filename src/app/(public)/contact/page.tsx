@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 import PageTransition from "@/components/motion/PageTransition";
 import siteData from "@/data/site.json";
+import MobileHeroPills from "@/components/sections/MobileHeroPills";
 
 const WireframeBackground = dynamic(
   () => import("@/components/three/WireframeBackground"),
@@ -116,6 +117,10 @@ export default function ContactPage() {
           >
             get in <span style={{ color: "var(--accent)" }}>touch</span>
           </h1>
+          <MobileHeroPills
+            pills={["acm@svnit.ac.in", "Surat, Gujarat"]}
+            descriptor="We'd love to hear from you."
+          />
           <p
             className="mt-4"
             style={{ color: "var(--text-secondary)", maxWidth: "560px" }}

@@ -6,7 +6,13 @@
     "date": "2026-03-21",
     "location": "SVNIT Guest House",
     "description": "A 24-hour hackathon challenging participants to build innovative AI-powered solutions. Over 200 participants across 50 teams competed for prizes worth ₹1,00,000.",
-    "coverGradient": "linear-gradient(135deg, #1a1a2e, #e8593c22)"
+    "fullDescription": "DotSlash 9.0 was ACM SVNIT's flagship 24-hour hackathon, bringing together over 200 participants from 50 teams across India. The theme this year was AI-powered solutions for real-world challenges — from healthcare automation to smart city infrastructure. Teams had access to mentors from top tech companies, cloud credits, and workshops throughout the event. The top 3 teams walked away with prizes worth ₹1,00,000 in total, along with internship opportunities from our sponsor partners.",
+    "images": [
+      "/events/dotslash.jpg"
+    ],
+    "registrationUrl": "",
+    "coverGradient": "linear-gradient(135deg, #1a1a2e, #e8593c22)",
+    "image": "/events/dotslash.jpg"
   },
   {
     "id": "event-002",
@@ -14,79 +20,53 @@
     "type": "Hackathon",
     "date": "2026-02-10",
     "location": "SVNIT Guest House",
-    "description": "A hands-on workshop covering fundamental data structures, algorithms, and strategies for competitive programming contests on Codeforces and LeetCode.",
-    "coverGradient": "linear-gradient(135deg, #0d1117, #1a1a3e)"
+    "description": "Echelon 24-Hour Hackathon by ACM NIT Surat is an AI × Cybersecurity hackathon where participants build innovative solutions tackling modern digital threats using the power of AI.",
+    "fullDescription": "Echelon 24-Hour Hackathon is an AI × Cybersecurity innovation challenge organized by ACM NIT Surat that brings together developers, innovators, and cybersecurity enthusiasts for 24 hours of continuous building and problem-solving. Participants develop impactful solutions such as AI-powered threat detection systems, phishing prevention tools, secure authentication platforms, and intelligent security applications. The event encourages creativity, teamwork, and rapid innovation under intense time constraints while providing opportunities to learn from mentors and collaborate with fellow tech enthusiasts. Echelon aims to inspire participants to explore the future of secure and intelligent technology through hands-on innovation and real-world problem solving.",
+    "images": [],
+    "registrationUrl": "",
+    "coverGradient": "linear-gradient(135deg, #0d1117, #1a1a3e)",
+    "image": "/events/echelon.webp"
   },
   {
     "id": "event-003",
-    "title": "CyberSec CTF Challenge",
+    "title": "Genesis",
     "type": "Competition",
-    "date": "2024-08-10",
+    "date": "2025-12-08",
     "location": "Online",
-    "description": "A Capture The Flag event testing skills in web exploitation, reverse engineering, cryptography, and forensics. Open to all engineering students.",
-    "coverGradient": "linear-gradient(135deg, #111111, #2a1a2e)"
+    "description": "Genesis by ACM NIT Surat, CEV NIT Surat, and GDGC NIT Surat is a month-long bootcamp featuring multiple tracks designed to help students build real-world skills through hands-on learning and projects.",
+    "fullDescription": "Genesis is a month-long collaborative bootcamp organized by ACM NIT Surat, CEV NIT Surat, and GDGC NIT Surat aimed at helping students learn, build, and grow through structured hands-on tracks across different domains of technology. The bootcamp offers step-by-step learning paths, practical tasks, weekly challenges, mentorship, and project-based learning to ensure participants gain real applied skills instead of just theoretical knowledge. Each track is designed to guide students from fundamentals to building complete showcase-ready projects while improving creativity, problem-solving, and independent development confidence. Genesis creates a collaborative environment where students explore technologies, work on real-world ideas, and strengthen their skills for hackathons, internships, and future opportunities.",
+    "images": [],
+    "registrationUrl": "",
+    "coverGradient": "linear-gradient(135deg, #111111, #2a1a2e)",
+    "tags": [
+      "1-month Bootcamp"
+    ],
+    "image": "/events/genesis.webp"
   },
   {
     "id": "event-004",
-    "title": "Deep Learning from Scratch",
-    "type": "Workshop",
-    "date": "2024-07-05",
+    "title": "Hour Of AI",
+    "type": "Other",
+    "date": "2026-01-19",
     "location": "Seminar Hall, SVNIT",
-    "description": "A three-day intensive workshop covering neural networks, backpropagation, CNNs, and practical model building using PyTorch from the ground up.",
-    "coverGradient": "linear-gradient(135deg, #1a1a1a, #e8593c11)"
+    "description": "Hour of AI by ACM NIT Surat is an outreach initiative where ACM members visit schools to introduce students to AI, its real-world applications, and future possibilities through interactive sessions and live demonstrations.",
+    "fullDescription": "Hour of AI is an outreach initiative organized by ACM NIT Surat where ACM members visit different schools to introduce students to the world of Artificial Intelligence in an engaging and interactive way. Through presentations, live demonstrations, discussions, and real-world examples, students learn how AI is being used in areas like healthcare, education, gaming, robotics, and smart technologies. The sessions are designed to simplify complex concepts, spark curiosity, and encourage students to explore technology and innovation. Hour of AI aims to inspire young minds to see AI not just as futuristic technology, but as a powerful tool they can learn, build, and innovate with in the future.",
+    "images": [],
+    "registrationUrl": "",
+    "coverGradient": "linear-gradient(135deg, #1a1a1a, #e8593c11)",
+    "image": "/events/hourofai.webp"
   },
   {
     "id": "event-005",
-    "title": "Open Source Sprint",
-    "type": "Hackathon",
-    "date": "2024-03-22",
-    "location": "SVNIT Campus",
-    "description": "A weekend-long open source contribution sprint where students contributed to popular GitHub repositories and learned Git workflows, issue triage, and PR review.",
-    "coverGradient": "linear-gradient(135deg, #0a0a0a, #1a3a2e)"
-  },
-  {
-    "id": "event-006",
-    "title": "Tech Talk: Scaling Systems at Google",
-    "type": "Talk",
-    "date": "2024-02-14",
-    "location": "Auditorium, SVNIT",
-    "description": "A guest lecture by a Google SRE engineer on distributed systems, load balancing, and the infrastructure behind Google Search.",
-    "coverGradient": "linear-gradient(135deg, #111122, #1a1a1a)"
-  },
-  {
-    "id": "event-007",
-    "title": "Web Dev Bootcamp",
+    "title": "n8n Workshop",
     "type": "Workshop",
-    "date": "2024-01-18",
-    "location": "Computer Centre, SVNIT",
-    "description": "A comprehensive full-stack web development bootcamp covering React, Next.js, Tailwind CSS, and backend APIs with Node.js and Express.",
-    "coverGradient": "linear-gradient(135deg, #0d0d1a, #e8593c15)"
-  },
-  {
-    "id": "event-008",
-    "title": "Code Clash 3.0",
-    "type": "Competition",
-    "date": "2023-11-25",
-    "location": "Online (HackerRank)",
-    "description": "The flagship competitive programming contest of ACM SVNIT. Three rounds of increasing difficulty, with participants from 50+ colleges across India.",
-    "coverGradient": "linear-gradient(135deg, #1a0a1a, #2a1a1e)"
-  },
-  {
-    "id": "event-009",
-    "title": "Blockchain & Web3 Workshop",
-    "type": "Workshop",
-    "date": "2023-10-05",
-    "location": "Seminar Hall, SVNIT",
-    "description": "An introductory workshop on blockchain technology, smart contracts with Solidity, and building decentralized applications on Ethereum.",
-    "coverGradient": "linear-gradient(135deg, #111111, #1e1a2e)"
-  },
-  {
-    "id": "event-010",
-    "title": "Orientation: Welcome to ACM",
-    "type": "Talk",
-    "date": "2023-08-15",
-    "location": "Auditorium, SVNIT",
-    "description": "The annual orientation event introducing new students to ACM SVNIT, its domains, culture, and opportunities for growth and collaboration.",
-    "coverGradient": "linear-gradient(135deg, #0a0a0a, #e8593c0a)"
+    "date": "2025-10-07",
+    "location": "Seminar Hall, CSE Dept, SVNIT",
+    "description": "n8n Workshop by ACM NIT Surat introduced students to workflow automation using n8n, helping them build smart automated solutions and simplify repetitive tasks with AI and integrations.",
+    "fullDescription": "The n8n Workshop organized by ACM NIT Surat was designed to introduce students to the world of workflow automation and AI-powered integrations using n8n. Through hands-on demonstrations and practical examples, participants learned how to automate repetitive tasks, connect different applications, create intelligent workflows, and improve productivity without extensive coding. The session explored real-world automation use cases involving APIs, AI tools, chatbots, notifications, databases, and third-party services, giving students insight into how modern businesses and developers streamline operations. The workshop aimed to encourage students to build smarter systems, save time through automation, and explore the growing ecosystem of no-code and low-code technologies.",
+    "images": [],
+    "registrationUrl": "",
+    "coverGradient": "linear-gradient(135deg, #0a0a0a, #1a3a2e)",
+    "image": "/events/n8n.webp"
   }
 ]

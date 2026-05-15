@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import { ExternalLink, Users } from "lucide-react";
 import PageTransition from "@/components/motion/PageTransition";
 import projectsData from "@/data/projects.json";
+import MobileHeroPills from "@/components/sections/MobileHeroPills";
 
 const WireframeBackground = dynamic(
   () => import("@/components/three/WireframeBackground"),
@@ -55,6 +56,10 @@ export default function ProjectsPage() {
             what we&apos;ve{" "}
             <span style={{ color: "var(--accent)" }}>built</span>
           </h1>
+          <MobileHeroPills
+            pills={["Open Source", "Student Built", "Real Impact"]}
+            descriptor="Real projects. Real impact."
+          />
           <p
             className="mt-4"
             style={{

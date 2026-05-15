@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import PageTransition from "@/components/motion/PageTransition";
 import domainsData from "@/data/domains.json";
+import MobileHeroPills from "@/components/sections/MobileHeroPills";
 
 interface DomainItem {
   id: string;
@@ -90,6 +91,10 @@ export default function DomainsPage() {
               our{" "}
               <span style={{ color: "var(--accent)" }}>domains</span>
             </h1>
+            <MobileHeroPills
+              pills={["6 Domains", "Research Driven", "ACM SVNIT"]}
+              descriptor="Six verticals. One community."
+            />
             <p
               className="mt-4"
               style={{

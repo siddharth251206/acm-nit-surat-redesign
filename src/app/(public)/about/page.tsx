@@ -5,6 +5,7 @@ import dynamic from "next/dynamic";
 import PageTransition from "@/components/motion/PageTransition";
 import siteData from "@/data/site.json";
 import timelineData from "@/data/timeline.json";
+import MobileHeroPills from "@/components/sections/MobileHeroPills";
 
 const WireframeBackground = dynamic(
   () => import("@/components/three/WireframeBackground"),
@@ -83,6 +84,10 @@ export default function AboutPage() {
               about{" "}
               <span style={{ color: "var(--accent)" }}>acm svnit</span>
             </h1>
+            <MobileHeroPills
+              pills={["Est. 2005", "NIT Surat", "ACM Chapter"]}
+              descriptor="Building engineers since 2005."
+            />
           </div>
         </section>
 

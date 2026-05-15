@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Image from "next/image";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import siteData from "@/data/site.json";
+import MobileHeroPills from "@/components/sections/MobileHeroPills";
 
 const WireframeBackground = dynamic(
   () => import("@/components/three/WireframeBackground"),
@@ -53,6 +54,12 @@ export default function Hero() {
               <span className="text-text-primary">computing machinery</span>
             </h1>
           </div>
+
+          <MobileHeroPills
+            pills={["Est. 2005", "500+ Members", "20+ Years"]}
+            descriptor="The official ACM student chapter at NIT Surat."
+            cta={{ label: "Meet the Team →", href: "/team" }}
+          />
 
           <div className="absolute bottom-12 left-[var(--gutter)] right-[var(--gutter)] flex flex-col mobile:flex-row justify-between items-end gap-6">
             <p

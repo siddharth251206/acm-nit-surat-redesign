@@ -7,6 +7,7 @@ import { Suspense } from "react";
 import Image from "next/image";
 import PageTransition from "@/components/motion/PageTransition";
 import teamsData from "@/data/teams.json";
+import MobileHeroPills from "@/components/sections/MobileHeroPills";
 
 const WireframeBackground = dynamic(
   () => import("@/components/three/WireframeBackground"),
@@ -319,6 +320,10 @@ function TeamContent() {
           >
             the <span style={{ color: "var(--accent)" }}>people</span>
           </h1>
+          <MobileHeroPills
+            pills={["15+ Years", "100+ Alumni", "ACM SVNIT"]}
+            descriptor="The people who make it happen."
+          />
           <p
             className="mt-4"
             style={{
