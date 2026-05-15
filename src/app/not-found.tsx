@@ -25,7 +25,7 @@ export default function NotFound() {
           backgroundColor: "var(--bg-primary)",
         }}
       >
-        <WireframeBackground opacity={0.2} speed={0.3} />
+        <WireframeBackground opacity={0.4} speed={0.3} />
 
         <div className="container-site relative z-10 flex flex-col items-center text-center px-4 pt-16 pb-20">
           <span

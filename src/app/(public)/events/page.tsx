@@ -229,7 +229,7 @@ export default function EventsPage() {
         className="relative w-full"
         style={{ backgroundColor: "var(--bg-primary)" }}
       >
-        <WireframeBackground opacity={0.2} speed={0.4} />
+        <WireframeBackground opacity={0.4} speed={0.4} />
         <div
           className="container-site flex flex-col justify-center"
           style={{ minHeight: "50vh", paddingTop: "var(--navbar-height)" }}

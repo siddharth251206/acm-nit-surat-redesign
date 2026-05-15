@@ -23,7 +23,7 @@ export default function Hero() {
           backgroundColor: "var(--bg-primary)",
         }}
       >
-        <WireframeBackground opacity={0.35} speed={1} />
+        <WireframeBackground opacity={0.6} speed={1} />
 
         <div
           className="relative z-10 container-site flex flex-col justify-center"
