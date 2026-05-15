@@ -1,5 +1,7 @@
 # ACM SVNIT — Student Chapter Website
 
+**🌍 Live Deployment:** [acm-nit-surat.vercel.app](https://acm-nit-surat.vercel.app/)
+
 > The official website of the ACM Student Chapter at Sardar Vallabhbhai National Institute of Technology, Surat. A cinematic, performance-first web experience built to reflect the ambition and technical maturity of one of India's most active student chapters.
 
 ---
