@@ -76,7 +76,7 @@ export default function DomainsPage() {
         >
           <WireframeBackground opacity={0.4} speed={0.4} />
           <div
-            className="container-site flex flex-col justify-center"
+            className="relative z-10 container-site flex flex-col justify-center"
             style={{ minHeight: "50vh", paddingTop: "var(--navbar-height)" }}
           >
             <span className="mono-label mb-4">// DOMAINS</span>
