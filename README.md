@@ -23,6 +23,27 @@ A complete redesign of the ACM SVNIT website, targeting national award-winning q
 | **Fonts** | Clash Display + Cabinet Grotesk (Fontshare) + JetBrains Mono (Google Fonts) | Display authority, readable body text, technical mono labels |
 | **Icons** | Lucide React + custom SVGs | Lightweight, tree-shakeable icon set with inline SVGs for brand icons |
 
+### The Innovative ACM Local Admin
+
+A major challenge for student chapters is maintaining the website year over year. Handing over databases, cloud credentials, and complex headless CMS systems often leads to broken sites when core team members graduate. 
+
+To solve this, we built a highly innovative **Local-First Admin Panel** directly into the website (accessible locally at `/admin`).
+
+**Why Local?**
+- **Zero Running Costs**: No database hosting fees or premium CMS subscriptions. 
+- **Absolute Ownership**: The data lives exactly where the code lives. Handing over the website to the next year's committee is as simple as transferring the GitHub repository.
+- **Git as the Database**: Everything is tracked via version control. If a mistake is made, reverting to yesterday's data is one `git revert` away.
+- **No Dependency Rot**: Cloud APIs deprecate, but local JSON files are forever.
+
+**How it Works:**
+The Admin panel provides a beautiful, full-featured GUI for the executive committee to manage site data without touching a single line of code.
+- **Direct File System Access**: By leveraging Node.js `fs` APIs via Next.js Server Routes, the admin panel reads and writes directly to the `/src/data/*.json` files in real-time.
+- **Automated Image Handling**: When an admin uploads an event poster or a team member's photo, the system automatically saves the physical image file to the appropriate `/public/` sub-directory and binds the new local path to the JSON data.
+- **Hot-Reloaded WYSIWYG**: Because Next.js natively watches the `/src/` folder, updating the JSON via the Admin Panel instantly hot-reloads the frontend.
+- **Deployment Workflow**: The Admin Panel is designed strictly for local content management. Content managers run the site locally, make their edits through the beautiful UI, and push the resulting JSON and Image file changes to GitHub. Vercel then automatically deploys the static updates.
+
+This local-first architecture ensures the ACM SVNIT website remains immortal, perfectly maintainable, and 100% cost-free for generations of future committees.
+
 ### Design Philosophy
 
 - **Dark editorial aesthetic**: Matte black backgrounds (#0A0A0A), off-white typography (#F5F0E8), and a restrained coral-orange accent (#E8593C) used only for CTAs, highlights, and active states.
@@ -80,8 +101,8 @@ A complete redesign of the ACM SVNIT website, targeting national award-winning q
 |---|---|
 | **Frontend** | Next.js 14, React 18, TypeScript, Tailwind CSS, GSAP, Framer Motion, Three.js |
 | **Backend** | Next.js API Routes, Node.js |
-| **AI** | |
-| **ML** | |
+| **AI** | - |
+| **ML** | - |
 | **DevOps** | Vercel, GitHub Actions |
 | **Other** | Git, Figma, Lucide Icons, Fontshare |
 
