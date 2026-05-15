@@ -98,6 +98,17 @@ export default function EventsTeaser() {
                   >
                     {event.description}
                   </p>
+                  {event.instagramUrl && (
+                    <div className="mt-4">
+                      <button 
+                        onClick={(e) => { e.preventDefault(); e.stopPropagation(); window.open(event.instagramUrl, "_blank", "noopener,noreferrer"); }}
+                        className="inline-flex items-center gap-1.5 font-mono px-3 py-1.5 rounded bg-black/40 border border-white/10 hover:border-accent hover:text-accent transition-colors duration-200" 
+                        style={{ fontSize: "0.7rem", color: "var(--text-secondary)", letterSpacing: "0.05em" }}
+                      >
+                        <span className="flex items-center gap-1.5 font-display tracking-wider font-bold">EXPLORE <ArrowRight size={14} /></span>
+                      </button>
+                    </div>
+                  )}
                 </div>
               </TransitionLink>
             </div>

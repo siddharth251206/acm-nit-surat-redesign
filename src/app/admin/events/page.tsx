@@ -18,6 +18,8 @@ interface Event {
   image?: string;
   registrationUrl?: string;
   tags?: string[];
+  isUpcoming?: boolean;
+  instagramUrl?: string;
 }
 
 const EVENT_TYPES = ["Workshop", "Hackathon", "Talk", "Competition", "Other"];
@@ -80,7 +82,7 @@ export default function EventsAdmin() {
   };
 
   const openNew = () => {
-    setEditing({ id: `event-${Date.now()}`, title: "", type: "Workshop", date: new Date().toISOString().split("T")[0], location: "SVNIT Campus", description: "", fullDescription: "", images: [], coverGradient: "linear-gradient(135deg, #1a1a2e, #e8593c22)", registrationUrl: "", tags: [] });
+    setEditing({ id: `event-${Date.now()}`, title: "", type: "Workshop", date: new Date().toISOString().split("T")[0], location: "SVNIT Campus", description: "", fullDescription: "", images: [], coverGradient: "linear-gradient(135deg, #1a1a2e, #e8593c22)", registrationUrl: "", tags: [], isUpcoming: false, instagramUrl: "" });
     setIsNew(true);
     setTagInput("");
     setNewImageUrl("");
@@ -182,10 +184,17 @@ export default function EventsAdmin() {
             <div><label style={labelStyle}>Type *</label><select style={{ ...inputStyle, cursor: "pointer" }} value={editing.type} onChange={(e) => setEditing({ ...editing, type: e.target.value })}>{EVENT_TYPES.map((t) => <option key={t} value={t}>{t}</option>)}</select></div>
           </div>
 
-          {/* Date + Location */}
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.75rem", marginBottom: "0.75rem" }}>
+          {/* Date + Location + Upcoming */}
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "0.75rem", marginBottom: "0.75rem" }}>
             <div><label style={labelStyle}>Date *</label><input type="date" style={inputStyle} value={editing.date} onChange={(e) => setEditing({ ...editing, date: e.target.value })} /></div>
             <div><label style={labelStyle}>Location *</label><input style={inputStyle} value={editing.location} onChange={(e) => setEditing({ ...editing, location: e.target.value })} /></div>
+            <div>
+              <label style={labelStyle}>Status</label>
+              <label style={{ display: "flex", alignItems: "center", gap: "0.5rem", ...inputStyle, cursor: "pointer", padding: "0.55rem 0.75rem" }}>
+                <input type="checkbox" checked={editing.isUpcoming || false} onChange={(e) => setEditing({ ...editing, isUpcoming: e.target.checked })} />
+                <span style={{ fontSize: "0.85rem", color: "#f5f0e8" }}>Upcoming</span>
+              </label>
+            </div>
           </div>
 
           {/* Short Description */}
@@ -210,6 +219,12 @@ export default function EventsAdmin() {
           <div style={{ marginBottom: "0.75rem" }}>
             <label style={labelStyle}>Registration URL (leave blank to hide button in modal)</label>
             <input style={inputStyle} value={editing.registrationUrl || ""} onChange={(e) => setEditing({ ...editing, registrationUrl: e.target.value })} placeholder="https://..." />
+          </div>
+
+          {/* Instagram URL */}
+          <div style={{ marginBottom: "0.75rem" }}>
+            <label style={labelStyle}>Instagram Post URL (shows Explore button)</label>
+            <input style={inputStyle} value={editing.instagramUrl || ""} onChange={(e) => setEditing({ ...editing, instagramUrl: e.target.value })} placeholder="https://instagram.com/p/..." />
           </div>
 
           {/* Thumbnail Image (Primary Image) */}

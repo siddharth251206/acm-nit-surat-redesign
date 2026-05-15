@@ -10,7 +10,8 @@
     "images": [],
     "registrationUrl": "",
     "coverGradient": "linear-gradient(135deg, #1a1a2e, #e8593c22)",
-    "image": "/events/dotslash.jpg"
+    "image": "/events/dotslash.jpg",
+    "instagramUrl": "https://www.instagram.com/reel/DVPy7jjjBSD/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     "id": "event-002",
@@ -23,7 +24,8 @@
     "images": [],
     "registrationUrl": "",
     "coverGradient": "linear-gradient(135deg, #0d1117, #1a1a3e)",
-    "image": "/events/echelon.webp"
+    "image": "/events/echelon.webp",
+    "instagramUrl": "https://www.instagram.com/p/DTP3SZqjNeo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     "id": "event-003",
@@ -39,7 +41,8 @@
     "tags": [
       "1-month Bootcamp"
     ],
-    "image": "/events/genesis.webp"
+    "image": "/events/genesis.webp",
+    "instagramUrl": "https://www.instagram.com/p/DRzE-jcDIrr/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     "id": "event-004",
@@ -52,7 +55,8 @@
     "images": [],
     "registrationUrl": "",
     "coverGradient": "linear-gradient(135deg, #1a1a1a, #e8593c11)",
-    "image": "/events/hourofai.webp"
+    "image": "/events/hourofai.webp",
+    "instagramUrl": "https://www.instagram.com/p/DTrz2pwDPrp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   },
   {
     "id": "event-005",
@@ -65,6 +69,7 @@
     "images": [],
     "registrationUrl": "",
     "coverGradient": "linear-gradient(135deg, #0a0a0a, #1a3a2e)",
-    "image": "/events/n8n.webp"
+    "image": "/events/n8n.webp",
+    "instagramUrl": "https://www.instagram.com/p/DPabTGvCJh8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
   }
 ]
