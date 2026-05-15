@@ -2,6 +2,7 @@
 
 import TransitionLink from "@/components/motion/TransitionLink";
 import { ArrowRight, Calendar, MapPin } from "lucide-react";
+import Image from "next/image";
 import eventsData from "@/data/events.json";
 
 export default function EventsTeaser() {
@@ -33,63 +34,73 @@ export default function EventsTeaser() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 mobile:grid-cols-2 tablet:grid-cols-3 gap-6">
-          {recentEvents.map((event) => (
-            <article
-              key={event.id}
-              className="group rounded-md overflow-hidden border-subtle-hover transition-transform duration-300 hover:-translate-y-2"
-              style={{ backgroundColor: "var(--bg-tertiary)" }}
-            >
-              {/* Cover */}
-              <div
-                className="h-40 w-full"
-                style={{ background: event.coverGradient }}
-              />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 items-start mt-8">
+          {recentEvents.map((event: any) => (
+            <div key={event.id} className="relative transition-all duration-300">
+              <TransitionLink
+                href={`/events`}
+                className="polaroid-card block"
+              >
+                {/* The tape element */}
+                <div className="polaroid-tape" />
 
-              {/* Content */}
-              <div className="p-5">
-                <span className="tag mb-3">{event.type}</span>
-                <h3
-                  className="font-display mt-3 mb-2"
-                  style={{
-                    fontSize: "1.125rem",
-                    fontWeight: 600,
-                    lineHeight: 1.3,
-                  }}
-                >
-                  {event.title}
-                </h3>
-                <div
-                  className="flex items-center gap-4 mb-3"
-                  style={{ color: "var(--text-muted)", fontSize: "0.8rem" }}
-                >
-                  <span className="flex items-center gap-1">
-                    <Calendar size={12} />
-                    {new Date(event.date).toLocaleDateString("en-IN", {
-                      day: "numeric",
-                      month: "short",
-                      year: "numeric",
-                    })}
-                  </span>
-                  <span className="flex items-center gap-1">
-                    <MapPin size={12} />
-                    {event.location}
-                  </span>
+                {/* Thumbnail Area */}
+                <div style={{ position: "relative", width: "100%", aspectRatio: "3/4", backgroundColor: "var(--bg-tertiary)", overflow: "hidden", borderRadius: "2px" }}>
+                  
+                  {/* Cool Professional ACM Letterboxing Background */}
+                  <div style={{ position: "absolute", inset: 0, opacity: 0.2, backgroundImage: "radial-gradient(var(--border) 1px, transparent 1px)", backgroundSize: "12px 12px", zIndex: 0 }} />
+                  <div style={{ position: "absolute", inset: "-50%", display: "flex", flexWrap: "wrap", alignContent: "center", justifyContent: "center", gap: "1rem", opacity: 0.08, pointerEvents: "none", zIndex: 0, transform: "rotate(-30deg)" }}>
+                    {Array.from({ length: 40 }).map((_, i) => (
+                      <span key={i} className="font-display" style={{ fontSize: "2rem", fontWeight: 800, color: "var(--accent)", whiteSpace: "nowrap", letterSpacing: "0.1em" }}>
+                        ACM SVNIT
+                      </span>
+                    ))}
+                  </div>
+
+                  {event.image ? (
+                    <Image src={event.image} alt={event.title} fill style={{ objectFit: "contain", zIndex: 1 }} sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+                  ) : (
+                    <div style={{ position: "absolute", inset: 0, background: event.coverGradient || "linear-gradient(135deg, #111, #222)", zIndex: 1 }} />
+                  )}
+                  
+                  {/* Floating Type Badge */}
+                  <div style={{ position: "absolute", bottom: "12px", right: "12px", zIndex: 10, backgroundColor: "rgba(0,0,0,0.75)", backdropFilter: "blur(4px)", padding: "4px 8px", borderRadius: "4px", border: "1px solid rgba(255,255,255,0.15)" }}>
+                    <span className="font-mono" style={{ fontSize: "0.65rem", fontWeight: 600, color: "var(--accent)", letterSpacing: "0.1em", textTransform: "uppercase" }}>{event.type}</span>
+                  </div>
                 </div>
-                <p
-                  style={{
-                    fontSize: "0.85rem",
-                    lineHeight: 1.5,
-                    display: "-webkit-box",
-                    WebkitLineClamp: 2,
-                    WebkitBoxOrient: "vertical",
-                    overflow: "hidden",
-                  }}
-                >
-                  {event.description}
-                </p>
-              </div>
-            </article>
+
+                {/* Polaroid Caption / Plaque */}
+                <div style={{ paddingTop: "1.25rem", paddingBottom: "0.25rem", paddingLeft: "0.5rem", paddingRight: "0.5rem" }}>
+                  <h3
+                    className="font-display mb-1"
+                    style={{ fontSize: "1.15rem", fontWeight: 700, lineHeight: 1.2, color: "var(--text-primary)" }}
+                  >
+                    {event.title}
+                  </h3>
+                  <div
+                    className="font-mono mb-2 flex items-center flex-wrap gap-x-3 gap-y-1"
+                    style={{ fontSize: "0.7rem", color: "var(--text-muted)" }}
+                  >
+                    <span className="flex items-center gap-1">
+                      <Calendar size={10} /> {new Date(event.date).toLocaleDateString("en-IN", { day: "numeric", month: "short", year: "numeric" })}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <MapPin size={10} /> {event.location}
+                    </span>
+                  </div>
+                  <p
+                    className="font-body"
+                    style={{
+                      fontSize: "0.85rem", lineHeight: 1.5, color: "var(--text-secondary)",
+                      overflow: "hidden", display: "-webkit-box",
+                      WebkitLineClamp: 2, WebkitBoxOrient: "vertical",
+                    }}
+                  >
+                    {event.description}
+                  </p>
+                </div>
+              </TransitionLink>
+            </div>
           ))}
         </div>
       </div>

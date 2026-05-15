@@ -7,9 +7,7 @@
     "location": "SVNIT Guest House",
     "description": "A 24-hour hackathon challenging participants to build innovative AI-powered solutions. Over 200 participants across 50 teams competed for prizes worth ₹1,00,000.",
     "fullDescription": "DotSlash 9.0 was ACM SVNIT's flagship 24-hour hackathon, bringing together over 200 participants from 50 teams across India. The theme this year was AI-powered solutions for real-world challenges — from healthcare automation to smart city infrastructure. Teams had access to mentors from top tech companies, cloud credits, and workshops throughout the event. The top 3 teams walked away with prizes worth ₹1,00,000 in total, along with internship opportunities from our sponsor partners.",
-    "images": [
-      "/events/dotslash.jpg"
-    ],
+    "images": [],
     "registrationUrl": "",
     "coverGradient": "linear-gradient(135deg, #1a1a2e, #e8593c22)",
     "image": "/events/dotslash.jpg"
