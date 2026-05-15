@@ -78,12 +78,12 @@ A complete redesign of the ACM SVNIT website, targeting national award-winning q
 
 | Domain | Technologies / Frameworks / Tools |
 |---|---|
-| **Frontend** | Next.js 14, React 18, TypeScript, Tailwind CSS, GSAP, Framer Motion |
+| **Frontend** | Next.js 14, React 18, TypeScript, Tailwind CSS, GSAP, Framer Motion, Three.js |
 | **Backend** | Next.js API Routes, Node.js |
-| **3D / Visual** | Three.js, WebGL |
+| **AI** | OpenAI API, HuggingFace (from Domain examples) |
+| **ML** | PyTorch, TensorFlow, Scikit-Learn (from Domain examples) |
 | **DevOps** | Vercel, GitHub Actions |
-| **Design** | Figma, CSS Custom Properties, Responsive Design |
-| **Other** | Git, Lucide Icons, Fontshare, Google Fonts |
+| **Other** | Git, Figma, Lucide Icons, Fontshare |
 
 ---
 
